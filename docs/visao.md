@@ -49,11 +49,11 @@ A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata,
 |Resolução de conflitos|Brainstorming|Serviço de comunicação remota|
 
 ### 3.3 Documentação de Requisitos
-
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Requisitos de Usuário|||
-|Requisitos de Sistema|||
+|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Arquivo .md no repositório do GitHub e editor gráfico Figma|
+|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Arquivo .md no repositório do GitHub e editor gráfico Figma|
+|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Arquivo .md no repositório do GitHub e editor gráfico Figma|
 
 ### 3.4 Verificação de Requisitos
 
