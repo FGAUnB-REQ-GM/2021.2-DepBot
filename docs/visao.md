@@ -86,4 +86,3 @@ Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota
 |Data|Versão|Modificação|Autores|
 |:---|:-----|:----------|:------|
 |29/01/2022|0.1|Criação do documento|Lucas, Pedro Henrique, Pedro Lucas, Victor, Vinícius|
-|31/01/2022|0.2|Mudança no documento em Verificação de Requisitos|Pedro Lucas|
