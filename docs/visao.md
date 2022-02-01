@@ -59,7 +59,14 @@ A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata,
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-||||
+Planejamento|Brainstorming|Serviço de Comunicação Remota, Documento de texto
+Apresentação|Apresentação em Grupo por Chamada|Serviço de Comunicação Remota
+Preparação|Encontro por Chamada de Vídeo|Serviço de Comunicação Remota
+Reunião de Inspeção|Reunião por Chamada de Vídeo|Serviço de Comunicação Remota
+Correção|Observar, Documentar e Consertar|Documentos
+Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota
+
+
 
 ### 3.5 Gerenciamento de Requisitos
 
@@ -79,3 +86,4 @@ A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata,
 |Data|Versão|Modificação|Autores|
 |:---|:-----|:----------|:------|
 |29/01/2022|0.1|Criação do documento|Lucas, Pedro Henrique, Pedro Lucas, Victor, Vinícius|
+|31/01/2022|0.2|Mudança no documento em Verificação de Requisitos|Pedro Lucas|
