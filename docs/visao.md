@@ -72,7 +72,9 @@ Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-||||
+|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Arquivo .md na plataforma GitHub.|
+|Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Plataforma GitHub|
+|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Arquivo .md no repositório GitHub.|
 
 ## 4. Lições Aprendidas
 
