@@ -26,7 +26,7 @@ Acreditamos que um bot capaz de realizar tais funções em um aplicativo de mens
 |**Nosso produto**|proporciona as informações diretamente no Telegram|
 
 ### 1.3 Objetivos do Produto
-	O objetivo do produto é fornecer informações sobre os deputados brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, conhecendo mais sobre o deputado.
+O objetivo do produto é fornecer informações sobre os deputados brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, conhecendo mais sobre o deputado.
 	
 ## 2. Abordagem de Desenvolvimento de Software
 
