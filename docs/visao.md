@@ -1,5 +1,10 @@
 # Visão do Produto e Projeto
 
+## Histórico de Versões
+|Data|Versão|Modificação|Autores|
+|:---|:-----|:----------|:------|
+|29/01/2022|0.1|Criação do documento|Lucas, Pedro Henrique, Pedro Lucas, Victor, Vinícius|
+
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
@@ -30,7 +35,7 @@ O objetivo do produto é fornecer informações sobre os deputados brasileiros �
 	
 ## 2. Abordagem de Desenvolvimento de Software
 
-A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, por melhor se adaptar às necessidades do produto. O Cascata torna possível estimar e prever o tempo e orçamento totais do projeto logo na fase inicial e, consequentemente, é mais fácil de gerenciar.
+A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, por se adequar bem às necessidades do produto. O Cascata é bastante indicado para projetos que têm requisitos bem definidos, no qual não são esperadas muitas alterações. Esse aspecto condiz com o escopo do projeto. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
 
 ## 3. Abordagem de Engenharia de Requisitos
 
@@ -38,8 +43,8 @@ A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata,
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Identificação de requisitos funcionais|Cenários|Arquivo .md no repositório do GitHub|
-|Identificação de requisitos não funcionais|Cenários|Arquivo .md no repositório do GitHub|
+|Identificação de requisitos funcionais|Cenários|Software de edição de texto|
+|Identificação de requisitos não funcionais|Cenários|Software de edição de texto|
 
 ### 3.2 Análise de Requisitos
 
@@ -52,20 +57,20 @@ A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata,
 ### 3.3 Documentação de Requisitos
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Arquivo .md no repositório do GitHub e editor gráfico Figma|
-|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Arquivo .md no repositório do GitHub e editor gráfico Figma|
-|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Arquivo .md no repositório do GitHub e editor gráfico Figma|
+|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
+|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
+|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
 
 ### 3.4 Verificação de Requisitos
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-Planejamento|Brainstorming|Serviço de Comunicação Remota, Documento de texto
-Apresentação|Apresentação em Grupo por Chamada|Serviço de Comunicação Remota
-Preparação|Encontro por Chamada de Vídeo|Serviço de Comunicação Remota
-Reunião de Inspeção|Reunião por Chamada de Vídeo|Serviço de Comunicação Remota
-Correção|Observar, Documentar e Consertar|Documentos
-Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota
+Planejamento|Brainstorming|Serviço de Comunicação Remota e Software de edição de texto|
+Apresentação|Apresentação em Grupo por Chamada|Serviço de Comunicação Remota|
+Preparação|Encontro por Chamada de Vídeo|Serviço de Comunicação Remota|
+Reunião de Inspeção|Reunião por Chamada de Vídeo|Serviço de Comunicação Remota|
+Correção|Observar, Documentar e Consertar|Software de edição de texto|
+Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota|
 
 
 
@@ -73,19 +78,17 @@ Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Arquivo .md na plataforma GitHub.|
+|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Software de edição de texto|
 |Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Plataforma GitHub|
-|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Arquivo .md no repositório GitHub.|
+|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Software de edição de texto|
 
 ## 4. Lições Aprendidas
 
 ### 4.1 Unidade 1
 
+Na Unidade 1 foi possível aprender sobre os diferentes processos de engenharia de requisitos e fomos introduzidos as várias atividades da engenharia de requisitos e a alguns dos métodos que podem ser usados para concluí-las.
+
 ## Referências Bibliográficas
 
 > Sommerville, Engenharia de Software (2011)
-
-## Histórico de Versões
-|Data|Versão|Modificação|Autores|
-|:---|:-----|:----------|:------|
-|29/01/2022|0.1|Criação do documento|Lucas, Pedro Henrique, Pedro Lucas, Victor, Vinícius|
+> 
