@@ -18,9 +18,9 @@
 
 ### 1.2 Declaração de Posição do Produto
 
-O grupo propõe o desenvolvimento de um ChatBot voltado para aplicativos de mensagens, mais precisamente o Telegram. A ideia é tornar o acesso a informações de órgãos políticos mais fácil, sendo assim, com uma simples conversa usual com um bot, seria possível entender o funcionamento do órgão, os representantes presentes , blocos partidários, frentes parlamentares e muitos outros parâmetros de busca.
+O DepBot é uma aplicação para a plataforma Telegram que visa agregar informações a respeito da Câmara dos Deputados, simulando uma conversa usual e natural com o usuário. A ideia é facilitar a acessibilidade dos dados disponibilizados e abertos pelo poder Legislativo que, apesar de estarem disponíveis para acesso a qualquer momento, acaba por ser uma tarefa de baixa praticidade. 
 
-Acreditamos que um bot capaz de realizar tais funções em um aplicativo de mensagens se torna muito intuitivo, conseguindo então simular uma conversa com uma pessoa. Não precisando então entrar em sites distintos em busca de tais informações, ou ficar dependente apenas de notícias, o bot unificará o máximo as informações necessárias para que seja moldado um bom fundamento de voto, ou então uma opinião sobre alguma frente partidária, são grandes as possibilidades que o bot poderá trazer para quem o consumir, sendo focado para o público eleitoral e consumidores do Telegram.
+Logo, ao invés de navegar pela internet a procura dos dados, verificando a confiabilidade dos mesmos, o DepBot propõe uma solução mais eficiente e estimulante para a procura. As informações serão então consolidadas em uma conversa com um robô que busca ser intuitiva para o usuário do produto.
 
 | | |
 |:-|:-|
