@@ -9,7 +9,7 @@
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
-|  |
+| | |
 |:-|:-|
 |**O problema**|Com a dificuldade de acessibilidade das informações dos representantes políticos da Câmera do Deputados.|
 |**Afeta**|A população eleitoral.|
