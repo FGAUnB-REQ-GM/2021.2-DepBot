@@ -46,7 +46,7 @@ Para a abordagem de Engenharia de Requisitos também utilizamos como base o Casc
 Segue imagem com os processos abaixo:
 
 <p align="center">
-  <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/tree/main/docs/logo-2021.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/doc_visao/docs/assets/cascataProcessos.png?raw=true">
 </p>
 
 ### 3.1 Elicitação de Requisitos
