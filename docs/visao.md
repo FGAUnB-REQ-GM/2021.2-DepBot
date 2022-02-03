@@ -41,9 +41,14 @@ A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata,
 
 ## 3. Abordagem de Engenharia de Requisitos
 
-Para a abordagem de Engenharia de Requisitos também utilizamos como base o Cascata. O modelo possui todas as atividades presentes na engenharia de requisitos, seguindo uma linearidade quanto a ordem de execução das etapas. Segue imagem com o processos abaixo:
+Para a abordagem de Engenharia de Requisitos também utilizamos como base o Cascata. O modelo possui todas as atividades presentes na engenharia de requisitos, seguindo uma linearidade quanto a ordem de execução das etapas. 
 
-Imagem
+Segue imagem com os processos abaixo:
+
+<p align="center">
+  <img src="https://github.com/fga-eps-mds/2021-1-hospitalar/tree/main/docs/logo-2021.jpg?raw=true">
+</p>
+
 ### 3.1 Elicitação de Requisitos
 
 |Atividade|Método|Ferramenta|
