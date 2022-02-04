@@ -1,3 +1,12 @@
+<span style="color:red">
+ **Comentários Gerais**
+1) metodologia: não trás os fatores do Sommerville;
+2) metodologia e atividades de requisitos: a equipe fala de casos de uso, histórias, cenários, SRS como sendo técnicas e artefatos a serem utilizados. Não faz sentido, ao passo que os mesmos organizam de maneira diferente os requisitos de software. A equipe deve rever todas as atividades (e suas informações) de requisitos.
+3) lições aprendidas: a equipe apresenta uma frase genérica sobre o que aprendeu, não deixando claro qual, de fato, foi o aprendizado. 
+4) revejam o vídeo da atividade síncrona e efetivem todos os ajustes comentados.	
+</span>
+
+
 # Visão do Produto e Projeto
 
 ## Histórico de Versões
