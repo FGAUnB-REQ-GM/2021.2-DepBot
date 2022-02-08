@@ -6,6 +6,7 @@
 |29/01/2022|0.1|Criação do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |31/01/2022|0.2|Adição de novas informações nos tópicos do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |02/02/2022|0.3|Revisão e melhoria nos textos|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
+|08/02/2022|0.4|Implementação do feedback na seção 2|
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
@@ -37,7 +38,7 @@ O objetivo do produto é fornecer informações sobre os deputados brasileiros �
 	
 ## 2. Abordagem de Desenvolvimento de Software
 
-A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, por se adequar bem às necessidades do produto. O Cascata é bastante indicado para projetos que têm requisitos bem definidos, no qual não são esperadas muitas alterações. Esse aspecto condiz com o escopo do projeto. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
+Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, devido à capacidade de estimar e prever o tempo e orçamento totais do projeto que ele proporciona, além de possuir etapas estruturadas e foco no planejamento. Sommerville informa que o Cascata deve ser usado apenas quando os requisitos são bem conhecidos e pouco prováveis de sofrerem alteração, e nesse aspecto o escopo do projeto condiz com a abordagem. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
 
 ## 3. Abordagem de Engenharia de Requisitos
 
