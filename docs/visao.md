@@ -99,6 +99,6 @@ Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferente
 
 ## Referências Bibliográficas
 
-Sommerville, I., Engenharia de software. 9th ed., Pearson Addison Wesley, 2011.
+SOMMERVILLE, Ian. Engenharia de Software. 10ª ed., Pearson, 2018.
 
 Kotonya, G. and Sommerville, I. (1998) Requirements Engineering: Processes and Techniques. John Wiley & Sons, Chichester.
