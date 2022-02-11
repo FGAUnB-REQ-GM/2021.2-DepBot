@@ -7,6 +7,7 @@
 |31/01/2022|0.2|Adição de novas informações nos tópicos do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |02/02/2022|0.3|Revisão e melhoria nos textos|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |08/02/2022|0.4|Implementação do feedback na seção 2|
+|08/02/2022|0.5|Adição do esqueleto das novas seções e especificação do tipo de deputado|Victor Cabral|
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
@@ -34,7 +35,15 @@ Logo, ao invés de navegar pela internet a procura dos dados, verificando a conf
 
 ### 1.3 Objetivos do Produto
 
-O objetivo do produto é fornecer informações sobre os deputados brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, aprende ou confirma informações sobre o deputado, permitindo realizar um voto mais fundamentado.
+O objetivo do produto é fornecer informações sobre os deputados federais brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, aprendendo ou confirmando informações sobre o deputado, o que permite realizar um voto mais fundamentado.
+
+### 1.4	Escopo do Produto
+
+#### 1.4.1	Requisitos Funcionais
+
+#### 1.4.2	Requisitos Não-Funcionais
+
+### 1.5	Mínimo Produto Viável (MVP)
 	
 ## 2. Abordagem de Desenvolvimento de Software
 
@@ -68,9 +77,9 @@ Segue imagem com os processos abaixo:
 ### 3.3 Documentação de Requisitos
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
-|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
-|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
+|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Software de edição de texto|
+|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto|
+|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto|
 
 ### 3.4 Verificação de Requisitos
 
@@ -91,13 +100,27 @@ Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota|
 |Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Plataforma GitHub|
 |Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Software de edição de texto|
 
-## 4. Lições Aprendidas
+## 4. Visão Geral do Projeto
 
-### 4.1 Unidade 1
+### 4.1 Organização do Projeto
+
+### 4.2 Planejamento das Fases e/ou Iterações do Projeto
+
+### 4.3	Matriz de Comunicação
+
+### 4.4	Gerenciamento de Riscos
+
+### 4.5	Critérios de Replanejamento
+
+## 5. Lições Aprendidas
+
+### 5.1 Unidade 1
 
 Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferentes processos da Engenharia de Requisitos. Fomos também introduzidos as várias atividades da engenharia de requisitos e a alguns dos métodos que podem ser usados para concluí-las.
 
-## Referências Bibliográficas
+### 5.2 Unidade 2
+
+## 6. Referências Bibliográficas
 
 SOMMERVILLE, Ian. Engenharia de Software. 10ª ed., Pearson, 2018.
 
