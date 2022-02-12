@@ -6,9 +6,11 @@
 |29/01/2022|0.1|Criação do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |31/01/2022|0.2|Adição de novas informações nos tópicos do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |02/02/2022|0.3|Revisão e melhoria nos textos|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
-|08/02/2022|0.4|Implementação do feedback na seção 2|
+|08/02/2022|0.4|Implementação do feedback na seção 2| Vinicius Roriz |
+|09/02/2022|0.4.1| Atualização ref. bibliográficas e seção 1.3| Lucas Braun |
 |11/02/2022|0.5|Adição do esqueleto das novas seções e especificação do tipo de deputado|Victor Cabral|
 |11/02/2022|0.6|Revisão e mudança na seção de Verificação de Requisitos|Pedro Lucas|
+|11/02/2022|0.7|Revisão da seção de lições aprendidas | Lucas Braun e Vinicius Roriz |
 
 ## 1. Visão Geral do Produto
 
@@ -117,7 +119,9 @@ Verificabilidade|Geração de casos de teste|Telegram|
 
 ### 5.1 Unidade 1
 
-Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferentes processos da Engenharia de Requisitos. Fomos também introduzidos as várias atividades da engenharia de requisitos e a alguns dos métodos que podem ser usados para concluí-las.
+Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferentes processos da Engenharia de Requisitos. Fomos também introduzidos as atividades de elicitação, análise, documentação, verificação e gerenciamento de requisitos e a alguns dos métodos que podem ser usados para concluí-las.
+
+Também revisamos as metodologias ágeis e exploramos mais o Cascata, que acabou sendo escolhido para o projeto da disciplina. Ainda sobre as metodologias, aprendemos que se pode utilizar princípios de práticas ágeis mesmo quando a estrutura principal utilizada é sequencial.
 
 ### 5.2 Unidade 2
 
