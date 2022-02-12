@@ -7,7 +7,9 @@
 |31/01/2022|0.2|Adição de novas informações nos tópicos do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |02/02/2022|0.3|Revisão e melhoria nos textos|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |08/02/2022|0.4|Implementação do feedback na seção 2|
-|08/02/2022|0.5|Adição do esqueleto das novas seções e especificação do tipo de deputado|Victor Cabral|
+|11/02/2022|0.5|Adição do esqueleto das novas seções e especificação do tipo de deputado|Victor Cabral|
+|11/02/2022|0.6|Revisão e mudança na seção de Verificação de Requisitos|Pedro Lucas|
+
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
@@ -85,12 +87,11 @@ Segue imagem com os processos abaixo:
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-Planejamento|Brainstorming|Serviço de Comunicação Remota e Software de edição de texto|
-Apresentação|Apresentação em Grupo por Chamada|Serviço de Comunicação Remota|
-Preparação|Encontro por Chamada de Vídeo|Serviço de Comunicação Remota|
-Reunião de Inspeção|Reunião por Chamada de Vídeo|Serviço de Comunicação Remota|
-Correção|Observar, Documentar e Consertar|Software de edição de texto|
-Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota|
+Realismo|Revisões de requisitos|Software de edição de texto|
+Completude|Revisões de requisitos|Software de edição de texto|
+Consistência|Revisões de requisitos|Software de edição de texto|
+Validação|Revisões de requisitos|Software de edição de texto|
+Verificabilidade|Geração de casos de teste|Telegram|
 
 ### 3.5 Gerenciamento de Requisitos
 
