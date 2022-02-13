@@ -12,6 +12,7 @@
 |11/02/2022|0.6|Revisão e mudança na seção de Verificação de Requisitos|Pedro Lucas|## 1. Visão Geral do Produto|
 |11/02/2022|0.7|Revisão da seção de lições aprendidas | Lucas Braun e Vinicius Roriz |
 |11/02/2022|0.8|Atualização na seção Organização do Projeto| Victor Cabral |
+|13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
@@ -123,11 +124,14 @@ Segue tabela com os papéis da equipe:
 |Sprint|Produto(Entrega)|Data Início|Data Fim|
 |:--------|:-----|:---------|:---------|
 |||||
-### 4.3	Matriz de Comunicação (Lucas)
+### 4.3	Matriz de Comunicação
 
 |Descrição|Área/Envolvidos|Periodicidade|Produtos Gerados|
 |:--------|:-----|:---------|:---------|
-|||||
+|Acompanhamento das Atividades em Andamento|Equipe do Projeto|Semanal|Ata de reunião|
+|Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores|Equipe do Projeto|Quinzenal|Relatório de situação do projeto|
+|Comunicar situação do projeto|Equipe do Projeto e Professor|Semanal|Relatório de situação do projeto|
+
 ### 4.4	Gerenciamento de Riscos (Pedro Lucas)
 
 Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
