@@ -97,9 +97,9 @@ Segue imagem com os processos abaixo:
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Software de edição de texto|
-|Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Plataforma GitHub|
-|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Software de edição de texto|
+|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Google Sheets|
+|Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Google Sheets|
+|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Google Sheets|
 
 ## 4. Visão Geral do Projeto
 
