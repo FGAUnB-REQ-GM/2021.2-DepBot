@@ -13,6 +13,8 @@
 |11/02/2022|0.7|Revisão da seção de lições aprendidas | Lucas Braun e Vinicius Roriz |
 |11/02/2022|0.8|Atualização na seção Organização do Projeto| Victor Cabral |
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
+|13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
+
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
@@ -141,11 +143,11 @@ Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:
 •	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
 •	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);]
 
-### 4.5	Critérios de Replanejamento (Vinicius)
+### 4.5	Critérios de Replanejamento
 
 Replanejamento mediante:
-- orientação do monitor ou professor responsável pela turma
-- consenso entre o grupo 
+- Orientação do monitor ou professor responsável pela turma
+- Consenso entre o grupo 
 
 ## 5. Lições Aprendidas
 
