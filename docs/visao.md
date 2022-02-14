@@ -15,8 +15,6 @@
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
 
-## 1. Visão Geral do Produto
-
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
@@ -143,7 +141,7 @@ Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:
 •	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
 •	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
 •	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
-•	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);]
+•	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
 
 ### 4.5	Critérios de Replanejamento
 
