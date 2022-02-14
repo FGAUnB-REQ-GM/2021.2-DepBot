@@ -15,6 +15,8 @@
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
 
+## 1. Visão Geral do Produto
+
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
