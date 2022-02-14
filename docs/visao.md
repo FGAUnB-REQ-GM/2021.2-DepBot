@@ -143,7 +143,10 @@ Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:
 
 ### 4.5	Critérios de Replanejamento (Vinicius)
 
-[Descrever os critérios de replanejamento que serão utilizados, caso seja necessário realizá-lo no projeto.]
+Replanejamento mediante:
+- orientação do monitor ou professor responsável pela turma
+- consenso entre o grupo 
+
 ## 5. Lições Aprendidas
 
 ### 5.1 Unidade 1
