@@ -48,7 +48,30 @@ O objetivo do produto é fornecer informações sobre os deputados federais bras
 
 #### 1.4.1	Requisitos Funcionais
 
+**RF1** O software deve permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais;
+**RF2** O software deve auxiliar através de comandos \help e \ajuda as possíveis funcionalidades do bot;
+**RF3** O software deve disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações, escolaridade;
+**RF4** O software deve disponibilizar informações sobre as votações que ocorreram no plenário;
+**RF5** O software deve apresentar informações sobre a Câmara dos Deputados;
+**RF6** O software deve listar os partidos dos deputados;
+**RF7** O software deve conversar casualmente com o usuário;
+**RF8** O software deve listar todas as UFs com siglas e nomes por extenso;
+**RF9** O software deve pesquisar deputados nome e sobrenome, por partido, UF;
+**RF10** O software deve disponibilizar informações sobre as eleições;
+**RF11** O software deve responder às saudações digitadas pelo usuário;
+**RF12** O software deve, em caso de falha na compreensão, demonstrar o não entendimento da solicitação do usuário;
+**RF13** O software deve disponibilizar informações sobre as despesas com exercício parlamentar do deputado;
+**RF14** O software deve disponibilizar informações sobre as frentes parlamentares das quais um deputado é integrante;
+**RF15** O software deve disponibilizar uma definição e descrição sobre…(terminar);
+
+
 #### 1.4.2	Requisitos Não-Funcionais
+
+**RNF1** A linguagem de programação usada será Python;
+**RNF2** O bot deverá conversar em português;
+**RNF3** O bot usa a API dos Dados Abertos da Câmara dos Deputados.
+**RNF4**  O sistema não deve propagar informações falsas sobre os deputados , eleições e Câmara dos Deputados, 
+**RNF5** O software deve mostrar informações sem viés político.
 
 ### 1.5	Mínimo Produto Viável (MVP)
 	
