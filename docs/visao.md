@@ -108,21 +108,20 @@ Segue imagem com os processos abaixo:
 
 ## 4. Visão Geral do Projeto
 
-### 4.1 Organização do Projeto (Victor Cabral)
+### 4.1 Organização do Projeto
 
-A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos que todos participem da codificação, duas foram as modificações na organização: 
+A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos a participação de todos na codificação, duas foram as modificações na organização: 
 
-1) O gerente de projeto irá assumir também o papel de desenvolvedor caso suas atribuições diárias já tenham sido finalizadas.
-<br>
-2) O testador também acompanhará o desenvolvimento.
+- O gerente do projeto irá assumir também o papel de desenvolvedor caso suas atribuições semanais já tenham sido finalizadas.
+- O testador também irá acompanhar e participar do desenvolvimento caso suas atribuições semanais já tenham sido finalizadas.
 
 Segue tabela com os papéis da equipe:
 
-|Papel|Atribuições|Responsável|Participantes|
+|Papel|Atribuições|Responsáveis|Participantes|
 |:--------|:-----|:---------|:---------|
-|Gerente do projeto||Pedro Lucas||
-|Desenvolvedor||Pedro Vieira|Victor Cabral, Vinícius Roriz e Lucas Braun|
-|Testador||Vinícius Roriz|Lucas Braun, Pedro Vieira e Victor Cabral|
+|Gerente do projeto|Acompanhar e gerenciar a equipe; Garantir um bom andamento do projeto; Preparar atas para as reuniões; Criação e fechamento de issues; Participar com papel secundário no desenvolvimento; Documentos de abertura e fechamento de Sprints; Trabalhar na documentação.|Pedro Lucas||
+|Desenvolvedor|Codificação do software; Definir e seguir um padrão para organização dos códigos; Analisar e implementar possíveis melhorias na aplicação; Trabalhar na documentação.|Pedro Vieira e Victor Cabral| Vinícius Roriz, Lucas Braun e Pedro Lucas|
+|Testador|Executar testes no software; Resolução de bugs; Definir e preparar ambiente de desenvolvimento; Participar com papel secundário no desenvolvimento; Trabalhar na documentação.|Vinícius Roriz e Lucas Braun|Pedro Vieira e Victor Cabral|
 ### 4.2 Planejamento das Fases e/ou Iterações do Projeto
 
 |Sprint|Produto(Entrega)|Data Início|Data Fim|
@@ -139,17 +138,17 @@ Segue tabela com os papéis da equipe:
 ### 4.4	Gerenciamento de Riscos (Pedro Lucas)
 
 Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
-•	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto; 
-•	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
-•	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
-•	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
-•	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);]
+-	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
+-	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
+-	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
+-	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
+-	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
 
 ### 4.5	Critérios de Replanejamento
 
 Replanejamento mediante:
-- Orientação do monitor ou professor responsável pela turma
-- Consenso entre o grupo 
+- Orientação do monitor ou professor responsável pela turma;
+- Consenso entre o grupo;
 
 ## 5. Lições Aprendidas
 
