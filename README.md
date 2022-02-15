@@ -1,4 +1,7 @@
 ## Sobre o projeto
+<p align="center">
+<img alt="logo" src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/doc_visao/docs/assets/depbot.png?raw=true">
+</p>
 <p align="justify">
   Repositorio referente à disciplina de Requisitos de Software da Universidade de Brasília. Tem como objetivo o desenvolvimento de um bot para telegram chamado DepBot.
 </p>
