@@ -14,7 +14,9 @@
 |11/02/2022|0.8|Atualização na seção Organização do Projeto| Victor Cabral |
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
+14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
 
+## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
@@ -44,9 +46,35 @@ O objetivo do produto é fornecer informações sobre os deputados federais bras
 
 ### 1.4	Escopo do Produto
 
-#### 1.4.1	Requisitos Funcionais
+### 1.4.1	Requisitos Funcionais
+
+|Requisito|Épico|Descrição|
+|--------|-----|---------|
+|**RF1**| Deputados | Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
+|**RF2**| Deputados | Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
+|**RF3**| Deputados | Listar os partidos na qual os deputados são associados |
+|**RF4**| Deputados | Pesquisar deputados por nome e sobrenome, partido e UF |
+|**RF5**| Deputados | Disponibilizar informações sobre as despesas com exercício parlamentar do deputado |
+|**RF6**| Deputados | Disponibilizar informações sobre as frentes parlamentares das quais o deputado é integrante |
+|**RF7**| Informativo | Disponibilizar informações sobre as votações que ocorreram no plenário |
+|**RF8**| Informativo | Apresentar informações sobre a Câmara dos Deputados |
+|**RF9**| Informativo | Listar todas as UFs com siglas e nomes por extenso |
+|**RF10**| Informativo | Disponibilizar informações sobre as eleições |
+|**RF11**| Informativo | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
+|**RF12**| Sistema | Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
+|**RF13**| Sistema | O software deve conversar casualmente com o usuário |
+|**RF14**| Sistema | O software deve, em caso de falha na compreensão, demonstrar o não entendimento da solicitação do usuário |
+|**RF15**| Sistema | Responder as saudações digitadas pelo usuário |
 
 #### 1.4.2	Requisitos Não-Funcionais
+
+|Requisito|Descrição|
+|--------|---------|
+|**RNF1** | A linguagem de programação usada será Python
+|**RNF2** | O bot deverá conversar em português
+|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados
+|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados
+**RNF5** | O software deve mostrar informações sem viés político
 
 ### 1.5	Mínimo Produto Viável (MVP)
 	
