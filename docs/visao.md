@@ -53,7 +53,7 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |--------|-----|---------|
 |**RF1**| Deputados | Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
 |**RF2**| Deputados | Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
-|**RF3**| Deputados | Listar os partidos na qual os deputados são associados |
+|**RF3**| Deputados | Listar os partidos que têm ou já tiveram parlamentares em exercício na Câmara |
 |**RF4**| Deputados | Pesquisar deputados por nome e sobrenome, partido e UF |
 |**RF5**| Deputados | Disponibilizar informações sobre as despesas com exercício parlamentar do deputado |
 |**RF6**| Deputados | Disponibilizar informações sobre as frentes parlamentares das quais o deputado é integrante |
