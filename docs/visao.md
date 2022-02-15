@@ -37,13 +37,13 @@ Logo, ao invés de navegar pela internet a procura dos dados, verificando a conf
 |**Para**|Cidadãos maiores de 16 anos.|
 |**Que**|Não possuem informações o suficiente sobre os candidatos a deputado.|
 |**O DepBot**|É um chatbot.|
-|**Que**|Disponibiliza informações de deputados aos usuários.|
+|**Que**|Disponibiliza informações da Câmara dos Deputados aos usuários.|
 |**Ao contrário**|De pesquisar individualmente as informações de cada candidato.|
 |**Nosso produto**|Proporciona as informações diretamente no Telegram. |
 
 ### 1.3 Objetivos do Produto 
 
-O objetivo do produto é fornecer informações sobre os deputados federais brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, aprendendo ou confirmando informações sobre o deputado, o que permite realizar um voto mais fundamentado.
+O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à população eleitoral. Com o DepBot, o usuário poderá receber tanto informações básicas quanto despesas, frente parlamentar, partidos associados, ocupações, escolaridade, etc. do candidato que ele pesquisar sobre. Assim, aprendendo ou confirmando informações sobre o deputado, o que permite realizar um voto mais fundamentado. Além disso o bot também trará informações gerais sobre a Câmara dos Deputados, eleições e votações que ocorreram no plenário com intuito de infomar bem o usuário sobre esses tópicos.    
 
 ### 1.4	Escopo do Produto
 
@@ -132,9 +132,10 @@ Segue imagem com os processos abaixo:
 ### 3.3 Documentação de Requisitos
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Software de edição de texto|
-|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto|
-|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto|
+|Documentar requisitos de usuário|Linguagem natural|Software de edição de texto|
+|Documentar requisitos de sistema|Linguagem natural|Software de edição de texto|
+|Registrar os requisitos aprovados de forma clara|Linguagem natural|Software de edição de texto|
+|Documentar possíveis alterações nos requisitos|Linguagem natural|Software de edição de texto|
 
 ### 3.4 Verificação de Requisitos
 
