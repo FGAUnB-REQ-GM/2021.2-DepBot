@@ -77,7 +77,28 @@ O objetivo do produto é fornecer informações sobre os deputados federais bras
 **RNF5** | O software deve mostrar informações sem viés político
 
 ### 1.5	Mínimo Produto Viável (MVP)
-	
+
+|Requisito|Descrição|
+|--------|---------|
+|**RF1**| Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
+|**RF2**| Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
+|**RF3**| Listar os partidos na qual os deputados são associados |
+|**RF8**| Apresentar informações sobre a Câmara dos Deputados |
+|**RF9**| Listar todas as UFs com siglas e nomes por extenso |
+|**RF11** | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
+|**RF12**| Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
+|**RNF1** | A linguagem de programação usada será Python |
+|**RNF2** | O bot deverá conversar em português |
+|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
+|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados |
+|**RNF5** | O software deve mostrar informações sem viés político |
+
+### 1.6	Organização dos requisitos conforme SAFe
+
+<p align="center">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/doc_visao/docs/assets/requistosSAFe.jpg?raw=true">
+</p>
+
 ## 2. Abordagem de Desenvolvimento de Software
 
 Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, devido à capacidade de estimar e prever o tempo e orçamento totais do projeto que ele proporciona, além de possuir etapas estruturadas e foco no planejamento. Sommerville informa que o Cascata deve ser usado apenas quando os requisitos são bem conhecidos e pouco prováveis de sofrerem alteração, e nesse aspecto o escopo do projeto condiz com a abordagem. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
@@ -134,7 +155,7 @@ Segue imagem com os processos abaixo:
 
 ## 4. Visão Geral do Projeto
 
-### 4.1 Organização do Projeto (Victor Cabral)
+### 4.1 Organização do Projeto 
 
 A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos que todos participem da codificação, duas foram as modificações na organização: 
 
