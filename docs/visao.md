@@ -15,6 +15,7 @@
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
 14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
+15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
 
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
@@ -25,7 +26,7 @@
 |**Cujo impacto é**|Desinformação e, consequentemente, um voto infundado.|
 |**Uma solução de sucesso seria**|Um bot que apresenta dados da Câmera dos Deputados ao usuário que utilizá-lo.|
 
-### 1.2 Declaração de Posição do Produto (ajustar)
+### 1.2 Declaração de Posição do Produto
 
 O DepBot é uma aplicação para a plataforma Telegram que visa agregar informações a respeito da Câmara dos Deputados, simulando uma conversa usual e natural com o usuário. A ideia é facilitar a acessibilidade dos dados disponibilizados e abertos pelo poder Legislativo que, apesar de estarem disponíveis para acesso a qualquer momento, acaba por ser uma tarefa de baixa praticidade. 
 
@@ -40,7 +41,7 @@ Logo, ao invés de navegar pela internet a procura dos dados, verificando a conf
 |**Ao contrário**|De pesquisar individualmente as informações de cada candidato.|
 |**Nosso produto**|Proporciona as informações diretamente no Telegram. |
 
-### 1.3 Objetivos do Produto (ajustar)
+### 1.3 Objetivos do Produto 
 
 O objetivo do produto é fornecer informações sobre os deputados federais brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, aprendendo ou confirmando informações sobre o deputado, o que permite realizar um voto mais fundamentado.
 
@@ -157,19 +158,18 @@ Segue imagem com os processos abaixo:
 
 ### 4.1 Organização do Projeto 
 
-A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos que todos participem da codificação, duas foram as modificações na organização: 
+A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos a participação de todos na codificação, duas foram as modificações na organização: 
 
-1) O gerente de projeto irá assumir também o papel de desenvolvedor caso suas atribuições diárias já tenham sido finalizadas.
-<br>
-2) O testador também acompanhará o desenvolvimento.
+- O gerente do projeto irá assumir também o papel de desenvolvedor caso suas atribuições semanais já tenham sido finalizadas.
+- O testador também irá acompanhar e participar do desenvolvimento caso suas atribuições semanais já tenham sido finalizadas.
 
 Segue tabela com os papéis da equipe:
 
-|Papel|Atribuições|Responsável|Participantes|
+|Papel|Atribuições|Responsáveis|Participantes|
 |:--------|:-----|:---------|:---------|
-|Gerente do projeto||Pedro Lucas||
-|Desenvolvedor||Pedro Vieira|Victor Cabral, Vinícius Roriz e Lucas Braun|
-|Testador||Vinícius Roriz|Lucas Braun, Pedro Vieira e Victor Cabral|
+|Gerente do projeto|Acompanhar e gerenciar a equipe; Garantir um bom andamento do projeto; Preparar atas para as reuniões; Criação e fechamento de issues; Participar com papel secundário no desenvolvimento; Documentos de abertura e fechamento de Sprints; Trabalhar na documentação.|Pedro Lucas||
+|Desenvolvedor|Codificação do software; Definir e seguir um padrão para organização dos códigos; Analisar e implementar possíveis melhorias na aplicação; Trabalhar na documentação.|Pedro Vieira e Victor Cabral| Vinícius Roriz, Lucas Braun e Pedro Lucas|
+|Testador|Executar testes no software; Resolução de bugs; Definir e preparar ambiente de desenvolvimento; Participar com papel secundário no desenvolvimento; Trabalhar na documentação.|Vinícius Roriz e Lucas Braun|Pedro Vieira e Victor Cabral|
 ### 4.2 Planejamento das Fases e/ou Iterações do Projeto
 
 |Sprint|Produto(Entrega)|Data Início|Data Fim|
@@ -183,20 +183,21 @@ Segue tabela com os papéis da equipe:
 |Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores|Equipe do Projeto|Quinzenal|Relatório de situação do projeto|
 |Comunicar situação do projeto|Equipe do Projeto e Professor|Semanal|Relatório de situação do projeto|
 
-### 4.4	Gerenciamento de Riscos (Pedro Lucas)
+### 4.4	Gerenciamento de Riscos
 
 Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
-•	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto; 
-•	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
-•	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
-•	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
-•	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
+
+-	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
+-	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
+-	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
+-	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
+-	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
 
 ### 4.5	Critérios de Replanejamento
 
 Replanejamento mediante:
-- Orientação do monitor ou professor responsável pela turma
-- Consenso entre o grupo 
+- Orientação do monitor ou professor responsável pela turma;
+- Consenso entre o grupo;
 
 ## 5. Lições Aprendidas
 
