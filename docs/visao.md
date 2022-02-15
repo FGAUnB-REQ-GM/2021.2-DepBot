@@ -97,7 +97,7 @@ O objetivo do produto é fornecer informações sobre os deputados federais bras
 ### 1.6	Organização dos requisitos conforme SAFe
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/doc_visao/docs/assets/requistosSAFe.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe.jpg?raw=true">
 </p>
 
 ## 2. Abordagem de Desenvolvimento de Software
