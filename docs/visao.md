@@ -14,9 +14,10 @@
 |11/02/2022|0.8|Atualização na seção Organização do Projeto| Victor Cabral |
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
+14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
+15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
 
-## 1. Visão Geral do Produto
-
+## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
@@ -25,7 +26,7 @@
 |**Cujo impacto é**|Desinformação e, consequentemente, um voto infundado.|
 |**Uma solução de sucesso seria**|Um bot que apresenta dados da Câmera dos Deputados ao usuário que utilizá-lo.|
 
-### 1.2 Declaração de Posição do Produto (ajustar)
+### 1.2 Declaração de Posição do Produto
 
 O DepBot é uma aplicação para a plataforma Telegram que visa agregar informações a respeito da Câmara dos Deputados, simulando uma conversa usual e natural com o usuário. A ideia é facilitar a acessibilidade dos dados disponibilizados e abertos pelo poder Legislativo que, apesar de estarem disponíveis para acesso a qualquer momento, acaba por ser uma tarefa de baixa praticidade. 
 
@@ -40,59 +41,65 @@ Logo, ao invés de navegar pela internet a procura dos dados, verificando a conf
 |**Ao contrário**|De pesquisar individualmente as informações de cada candidato.|
 |**Nosso produto**|Proporciona as informações diretamente no Telegram. |
 
-### 1.3 Objetivos do Produto (ajustar)
+### 1.3 Objetivos do Produto 
 
 O objetivo do produto é fornecer informações sobre os deputados federais brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, aprendendo ou confirmando informações sobre o deputado, o que permite realizar um voto mais fundamentado.
 
 ### 1.4	Escopo do Produto
 
-#### 1.4.1	Requisitos Funcionais
+### 1.4.1	Requisitos Funcionais
 
-**RF1** O software deve permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais;
-
-**RF2** O software deve auxiliar através de comandos \help e \ajuda as possíveis funcionalidades do bot;
-
-**RF3** O software deve disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações, escolaridade;
-
-**RF4** O software deve disponibilizar informações sobre as votações que ocorreram no plenário;
-
-**RF5** O software deve apresentar informações sobre a Câmara dos Deputados;
-
-**RF6** O software deve listar os partidos dos deputados;
-
-**RF7** O software deve conversar casualmente com o usuário;
-
-**RF8** O software deve listar todas as UFs com siglas e nomes por extenso;
-
-**RF9** O software deve pesquisar deputados nome e sobrenome, por partido, UF;
-
-**RF10** O software deve disponibilizar informações sobre as eleições;
-
-**RF11** O software deve responder às saudações digitadas pelo usuário;
-
-**RF12** O software deve, em caso de falha na compreensão, demonstrar o não entendimento da solicitação do usuário;
-
-**RF13** O software deve disponibilizar informações sobre as despesas com exercício parlamentar do deputado;
-
-**RF14** O software deve disponibilizar informações sobre as frentes parlamentares das quais um deputado é integrante;
-
-**RF15** O software deve disponibilizar uma definição e descrição sobre…(terminar);
-
+|Requisito|Épico|Descrição|
+|--------|-----|---------|
+|**RF1**| Deputados | Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
+|**RF2**| Deputados | Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
+|**RF3**| Deputados | Listar os partidos na qual os deputados são associados |
+|**RF4**| Deputados | Pesquisar deputados por nome e sobrenome, partido e UF |
+|**RF5**| Deputados | Disponibilizar informações sobre as despesas com exercício parlamentar do deputado |
+|**RF6**| Deputados | Disponibilizar informações sobre as frentes parlamentares das quais o deputado é integrante |
+|**RF7**| Informativo | Disponibilizar informações sobre as votações que ocorreram no plenário |
+|**RF8**| Informativo | Apresentar informações sobre a Câmara dos Deputados |
+|**RF9**| Informativo | Listar todas as UFs com siglas e nomes por extenso |
+|**RF10**| Informativo | Disponibilizar informações sobre as eleições |
+|**RF11**| Informativo | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
+|**RF12**| Sistema | Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
+|**RF13**| Sistema | O software deve conversar casualmente com o usuário |
+|**RF14**| Sistema | O software deve, em caso de falha na compreensão, demonstrar o não entendimento da solicitação do usuário |
+|**RF15**| Sistema | Responder as saudações digitadas pelo usuário |
 
 #### 1.4.2	Requisitos Não-Funcionais
 
-**RNF1** A linguagem de programação usada será Python;
-
-**RNF2** O bot deverá conversar em português;
-
-**RNF3** O bot usa a API dos Dados Abertos da Câmara dos Deputados.
-
-**RNF4**  O sistema não deve propagar informações falsas sobre os deputados , eleições e Câmara dos Deputados, 
-
-**RNF5** O software deve mostrar informações sem viés político.
+|Requisito|Descrição|
+|--------|---------|
+|**RNF1** | A linguagem de programação usada será Python
+|**RNF2** | O bot deverá conversar em português
+|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados
+|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados
+**RNF5** | O software deve mostrar informações sem viés político
 
 ### 1.5	Mínimo Produto Viável (MVP)
-	
+
+|Requisito|Descrição|
+|--------|---------|
+|**RF1**| Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
+|**RF2**| Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
+|**RF3**| Listar os partidos na qual os deputados são associados |
+|**RF8**| Apresentar informações sobre a Câmara dos Deputados |
+|**RF9**| Listar todas as UFs com siglas e nomes por extenso |
+|**RF11** | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
+|**RF12**| Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
+|**RNF1** | A linguagem de programação usada será Python |
+|**RNF2** | O bot deverá conversar em português |
+|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
+|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados |
+|**RNF5** | O software deve mostrar informações sem viés político |
+
+### 1.6	Organização dos requisitos conforme SAFe
+
+<p align="center">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/doc_visao/docs/assets/requistosSAFe.jpg?raw=true">
+</p>
+
 ## 2. Abordagem de Desenvolvimento de Software
 
 Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, devido à capacidade de estimar e prever o tempo e orçamento totais do projeto que ele proporciona, além de possuir etapas estruturadas e foco no planejamento. Sommerville informa que o Cascata deve ser usado apenas quando os requisitos são bem conhecidos e pouco prováveis de sofrerem alteração, e nesse aspecto o escopo do projeto condiz com a abordagem. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
@@ -149,7 +156,7 @@ Segue imagem com os processos abaixo:
 
 ## 4. Visão Geral do Projeto
 
-### 4.1 Organização do Projeto
+### 4.1 Organização do Projeto 
 
 A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos a participação de todos na codificação, duas foram as modificações na organização: 
 
@@ -176,9 +183,10 @@ Segue tabela com os papéis da equipe:
 |Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores|Equipe do Projeto|Quinzenal|Relatório de situação do projeto|
 |Comunicar situação do projeto|Equipe do Projeto e Professor|Semanal|Relatório de situação do projeto|
 
-### 4.4	Gerenciamento de Riscos (Pedro Lucas)
+### 4.4	Gerenciamento de Riscos
 
 Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
+
 -	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
 -	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
 -	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
