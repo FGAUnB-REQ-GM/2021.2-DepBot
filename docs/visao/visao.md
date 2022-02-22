@@ -175,7 +175,11 @@ Segue tabela com os papéis da equipe:
 
 |Sprint|Produto(Entrega)|Data Início|Data Fim|
 |:--------|:-----|:---------|:---------|
-|||||
+| Fase 1 |Definição dos Requisitos| 24/01/2022 | 16/03/2022 |
+| Fase 2 |Projeto de Sistema e Software| 17/03/2022 | 07/04/2022 |
+| Fase 3 |Implementação e teste unitário | 08/04/2022 | 28/04/2022 |
+| Fase 4 |Integração e teste de sistema| 29/04/2022 | 13/05/2022 |
+| Fase 5 |Operação e manutenção| 14/05/2022 | 17/05/2022|
 ### 4.3	Matriz de Comunicação
 
 |Descrição|Área/Envolvidos|Periodicidade|Produtos Gerados|
