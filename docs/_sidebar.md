@@ -1,2 +1,3 @@
 - Documentos
   - [Visão](visao/visao.md)
+  - [Canvas](canvas/canvas.md)
