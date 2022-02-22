@@ -2,7 +2,13 @@
 
 <p align="justify">
   Repositorio referente à disciplina de Requisitos de Software da Universidade de Brasília. Tem como objetivo o desenvolvimento de um bot para telegram chamado DepBot.
+  O DepBot tem como objetivo levar informações referentes à deputados federais, à política envolvida (como eleições, o que eles fazem) e à Câmara dos deputados para o usuário. Com isso esperamos que a população eleitoral adiquira mais conhecimentos e esteja mais informada em relação aos deputados que queira eleger.
 </p>
+
+## Links Referentes ao projeto:
+
+Kanban: https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1
+GitPages: https://fgaunb-req-gm.github.io/2021.2-DepBot/
 
 ## Equipe
 Foto | Nome | Gihub | Matrícula
