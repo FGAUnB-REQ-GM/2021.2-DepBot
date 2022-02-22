@@ -7,8 +7,8 @@
 
 ## Links Referentes ao projeto:
 
-Kanban: https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1
-GitPages: https://fgaunb-req-gm.github.io/2021.2-DepBot/
+<p>Kanban: https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1</p>
+<p>GitPages: https://fgaunb-req-gm.github.io/2021.2-DepBot/</p>
 
 ## Equipe
 Foto | Nome | Gihub | Matrícula
