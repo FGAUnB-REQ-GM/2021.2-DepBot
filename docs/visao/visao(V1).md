@@ -14,9 +14,8 @@
 |11/02/2022|0.8|Atualização na seção Organização do Projeto| Victor Cabral |
 |13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
-|14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
-|15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
-|23/02/2022|0.13|Alteração do Cronograma| Pedro Vieira e Victor Cabral |
+14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
+15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
 
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
@@ -178,8 +177,9 @@ Segue tabela com os papéis da equipe:
 |:--------|:-----|:---------|:---------|
 | Fase 1 |Definição dos Requisitos| 24/01/2022 | 16/03/2022 |
 | Fase 2 |Projeto de Sistema e Software| 17/03/2022 | 07/04/2022 |
-| Fase 3 |Integração e teste de sistema | 08/04/2022 | 28/04/2022 |
-| Fase 4 |Operação e manutenção| 29/04/2022 | 13/05/2022 |
+| Fase 3 |Implementação e teste unitário | 08/04/2022 | 28/04/2022 |
+| Fase 4 |Integração e teste de sistema| 29/04/2022 | 13/05/2022 |
+| Fase 5 |Operação e manutenção| 14/05/2022 | 17/05/2022|
 ### 4.3	Matriz de Comunicação
 
 |Descrição|Área/Envolvidos|Periodicidade|Produtos Gerados|
