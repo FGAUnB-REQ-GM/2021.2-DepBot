@@ -16,7 +16,8 @@
 |13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
 |14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
 |15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
-|23/02/2022|0.13|Alteração do Cronograma| Pedro Vieira e Victor Cabral |
+|23/02/2022|0.13|Alteração do Cronograma| Pedro Cassiano |
+|23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
 
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
@@ -29,18 +30,18 @@
 
 ### 1.2 Declaração de Posição do Produto
 
-O DepBot é uma aplicação para a plataforma Telegram que visa agregar informações a respeito da Câmara dos Deputados, simulando uma conversa usual e natural com o usuário. A ideia é facilitar a acessibilidade dos dados disponibilizados e abertos pelo poder Legislativo que, apesar de estarem disponíveis para acesso a qualquer momento, acaba por ser uma tarefa de baixa praticidade. 
+O DepBot é uma aplicação para a aplicativos de mensagens que visa agregar informações a respeito da Câmara dos Deputados, simulando uma conversa usual e natural com o usuário. A ideia é facilitar a acessibilidade dos dados disponibilizados e abertos pelo poder Legislativo que, apesar de estarem disponíveis para acesso a qualquer momento, acaba por ser uma tarefa de baixa praticidade. 
 
 Logo, ao invés de navegar pela internet a procura dos dados, verificando a confiabilidade dos mesmos, o DepBot propõe uma solução mais eficiente e estimulante para a procura. As informações serão então consolidadas em uma conversa com um robô que busca ser intuitiva para o usuário do produto.
 
 | | |
 |:-|:-|
-|**Para**|Cidadãos maiores de 16 anos.|
-|**Que**|Não possuem informações o suficiente sobre os candidatos a deputado.|
-|**O DepBot**|É um chatbot.|
-|**Que**|Disponibiliza informações da Câmara dos Deputados aos usuários.|
-|**Ao contrário**|De pesquisar individualmente as informações de cada candidato.|
-|**Nosso produto**|Proporciona as informações diretamente no Telegram. |
+|**Para**|Cidadãos maiores de 16 anos|
+|**Que**|Não possuem informações o suficiente sobre os candidatos a deputado|
+|**O DepBot**|É um chatbot|
+|**Que**|Disponibiliza informações da Câmara dos Deputados aos usuários|
+|**Ao contrário**|De pesquisar individualmente as informações de cada candidato|
+|**Nosso produto**|Proporciona as informações diretamente no aplicativo de mensagens |
 
 ### 1.3 Objetivos do Produto 
 
@@ -72,11 +73,11 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 
 |Requisito|Descrição|
 |--------|---------|
-|**RNF1** | A linguagem de programação usada será Python
-|**RNF2** | O bot deverá conversar em português
-|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados
-|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados
-**RNF5** | O software deve mostrar informações sem viés político
+|**RNF1**| A linguagem de programação usada será Python |
+|**RNF2**| O bot deverá conversar em português |
+|**RNF3**| O bot usa a API dos Dados Abertos da Câmara dos Deputados |
+|**RNF4**| O sistema deverá utilizar exclusivamente a api dos Dados Abertos da Câmara dos Deputados |
+|**RNF5**| O software deve mostrar informações sem viés político |
 
 ### 1.5	Mínimo Produto Viável (MVP)
 
@@ -92,7 +93,7 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |**RNF1** | A linguagem de programação usada será Python |
 |**RNF2** | O bot deverá conversar em português |
 |**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
-|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados |
+|**RNF4**| O sistema deverá utilizar exclusivamente a api dos Dados Abertos da Câmara dos Deputados |
 |**RNF5** | O software deve mostrar informações sem viés político |
 
 ### 1.6	Organização dos requisitos conforme SAFe
@@ -178,9 +179,8 @@ Segue tabela com os papéis da equipe:
 |:--------|:-----|:---------|:---------|
 | Fase 1 |Definição dos Requisitos| 24/01/2022 | 16/03/2022 |
 | Fase 2 |Projeto de Sistema e Software| 17/03/2022 | 07/04/2022 |
-| Fase 3 |Implementação e teste unitário | 08/04/2022 | 28/04/2022 |
-| Fase 4 |Integração e teste de sistema| 29/04/2022 | 13/05/2022 |
-| Fase 5 |Operação e manutenção| 14/05/2022 | 17/05/2022|
+| Fase 3 |Integração e teste de sistema | 08/04/2022 | 28/04/2022 |
+| Fase 4 |Operação e manutenção| 29/04/2022 | 13/05/2022 |
 ### 4.3	Matriz de Comunicação
 
 |Descrição|Área/Envolvidos|Periodicidade|Produtos Gerados|
