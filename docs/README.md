@@ -10,13 +10,13 @@
 
 ## Links Referentes ao projeto:
 
-<p> **Kanban** : https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1</p>
-<p> **GitPages** : https://fgaunb-req-gm.github.io/2021.2-DepBot/</p>
-<p> **Miro** : https://miro.com/app/board/uXjVONKvrRM=/?invite_link_id=343149403427</p>
+<p> Kanban : https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1</p>
+<p> GitPages : https://fgaunb-req-gm.github.io/2021.2-DepBot/</p>
+<p> Miro : https://miro.com/app/board/uXjVONKvrRM=/?invite_link_id=343149403427</p>
 
 ## Resultados:
 
-<p> **Vídeo Unidade 1** : https://www.youtube.com/watch?v=0hVLfgD8wBI</p>
+<p> Vídeo Unidade 1 : https://www.youtube.com/watch?v=0hVLfgD8wBI</p>
 
 ## Equipe
 Foto | Nome | Gihub | Matrícula
