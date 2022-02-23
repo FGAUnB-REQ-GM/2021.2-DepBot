@@ -16,7 +16,7 @@
 
 ## Resultados:
 
-<p> **Vídeo Unidade 1** : https://www.youtube.com/watch?v=0hVLfgD8wBI</p>
+<p> __Vídeo Unidade 1__ : https://www.youtube.com/watch?v=0hVLfgD8wBI</p>
 
 ## Equipe
 Foto | Nome | Gihub | Matrícula
