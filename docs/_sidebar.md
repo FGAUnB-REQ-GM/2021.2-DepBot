@@ -1,3 +1,3 @@
 - Documentos
-  - [Visão](visao/visao.md)
+  - [Visão](visao/visao(V2).md)
   - [Canvas](canvas/canvas.md)
