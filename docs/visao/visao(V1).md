@@ -6,18 +6,8 @@
 |29/01/2022|0.1|Criação do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |31/01/2022|0.2|Adição de novas informações nos tópicos do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |02/02/2022|0.3|Revisão e melhoria nos textos|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
-|08/02/2022|0.4|Atualização na seção de Abordagem de Desenvolvimento de Software| Vinicius Roriz |
-|09/02/2022|0.4.1| Atualização ref. bibliográficas e seção 1.3| Lucas Braun |
-|11/02/2022|0.5|Adição do esqueleto das novas seções e especificação do tipo de deputado|Victor Cabral|
-|11/02/2022|0.6|Revisão e mudança na seção de Verificação de Requisitos|Pedro Lucas|## 1. Visão Geral do Produto|
-|11/02/2022|0.7|Revisão da seção de lições aprendidas | Lucas Braun e Vinicius Roriz |
-|11/02/2022|0.8|Atualização na seção Organização do Projeto| Victor Cabral |
-|13/02/2022|0.9|Adicionando matriz de comunicação| Lucas Braun |
-|13/02/2022|0.10|Adicionando critérios de replanejamento| Vinicius Roriz |
-14/02/2022|0.11|Adicionando requisitos funcionais e não funcionais| Vinicius Roriz |
-15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
+## 1. Visão Geral do Produto
 
-## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
 |:-|:-|
@@ -37,72 +27,17 @@ Logo, ao invés de navegar pela internet a procura dos dados, verificando a conf
 |**Para**|Cidadãos maiores de 16 anos.|
 |**Que**|Não possuem informações o suficiente sobre os candidatos a deputado.|
 |**O DepBot**|É um chatbot.|
-|**Que**|Disponibiliza informações da Câmara dos Deputados aos usuários.|
+|**Que**|Disponibiliza informações de deputados aos usuários.|
 |**Ao contrário**|De pesquisar individualmente as informações de cada candidato.|
 |**Nosso produto**|Proporciona as informações diretamente no Telegram. |
 
-### 1.3 Objetivos do Produto 
+### 1.3 Objetivos do Produto
 
-O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à população eleitoral. Com o DepBot, o usuário poderá receber tanto informações básicas quanto despesas, frente parlamentar, partidos associados, ocupações, escolaridade, etc. do candidato que ele pesquisar sobre. Assim, aprendendo ou confirmando informações sobre o deputado, o que permite realizar um voto mais fundamentado. Além disso o bot também trará informações gerais sobre a Câmara dos Deputados, eleições e votações que ocorreram no plenário com intuito de infomar bem o usuário sobre esses tópicos.    
-
-### 1.4	Escopo do Produto
-
-### 1.4.1	Requisitos Funcionais
-
-|Requisito|Épico|Descrição|
-|--------|-----|---------|
-|**RF1**| Deputados | Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
-|**RF2**| Deputados | Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
-|**RF3**| Deputados | Listar os partidos na qual os deputados são associados |
-|**RF4**| Deputados | Pesquisar deputados por nome e sobrenome, partido e UF |
-|**RF5**| Deputados | Disponibilizar informações sobre as despesas com exercício parlamentar do deputado |
-|**RF6**| Deputados | Disponibilizar informações sobre as frentes parlamentares das quais o deputado é integrante |
-|**RF7**| Informativo | Disponibilizar informações sobre as votações que ocorreram no plenário |
-|**RF8**| Informativo | Apresentar informações sobre a Câmara dos Deputados |
-|**RF9**| Informativo | Listar todas as UFs com siglas e nomes por extenso |
-|**RF10**| Informativo | Disponibilizar informações sobre as eleições |
-|**RF11**| Informativo | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
-|**RF12**| Sistema | Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
-|**RF13**| Sistema | O software deve conversar casualmente com o usuário |
-|**RF14**| Sistema | O software deve, em caso de falha na compreensão, demonstrar o não entendimento da solicitação do usuário |
-|**RF15**| Sistema | Responder as saudações digitadas pelo usuário |
-
-#### 1.4.2	Requisitos Não-Funcionais
-
-|Requisito|Descrição|
-|--------|---------|
-|**RNF1** | A linguagem de programação usada será Python
-|**RNF2** | O bot deverá conversar em português
-|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados
-|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados
-**RNF5** | O software deve mostrar informações sem viés político
-
-### 1.5	Mínimo Produto Viável (MVP)
-
-|Requisito|Descrição|
-|--------|---------|
-|**RF1**| Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
-|**RF2**| Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
-|**RF3**| Listar os partidos na qual os deputados são associados |
-|**RF8**| Apresentar informações sobre a Câmara dos Deputados |
-|**RF9**| Listar todas as UFs com siglas e nomes por extenso |
-|**RF11** | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
-|**RF12**| Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
-|**RNF1** | A linguagem de programação usada será Python |
-|**RNF2** | O bot deverá conversar em português |
-|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
-|**RNF4** | O sistema não deve propagar informações falsas sobre os deputados, eleições e Câmara dos Deputados |
-|**RNF5** | O software deve mostrar informações sem viés político |
-
-### 1.6	Organização dos requisitos conforme SAFe
-
-<p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe.jpg?raw=true">
-</p>
-
+O objetivo do produto é fornecer informações sobre os deputados brasileiros à população eleitoral para que a mesma tenha conhecimento sobre o que o candidato a deputado e sua frente parlamentar são, prometem fazer e/ou já fizeram em seu mandato. Com o DepBot, o usuário poderá receber informações como discursos, despesas, frente parlamentar, eventos, ocupações, órgãos, etc. do candidato que ele pesquisar sobre. Assim, conhecendo mais sobre o deputado.
+	
 ## 2. Abordagem de Desenvolvimento de Software
 
-Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, devido à capacidade de estimar e prever o tempo e orçamento totais do projeto que ele proporciona, além de possuir etapas estruturadas e foco no planejamento. Sommerville informa que o Cascata deve ser usado apenas quando os requisitos são bem conhecidos e pouco prováveis de sofrerem alteração, e nesse aspecto o escopo do projeto condiz com a abordagem. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
+A abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, por se adequar bem às necessidades do produto. O Cascata é bastante indicado para projetos que têm requisitos bem definidos, no qual não são esperadas muitas alterações. Esse aspecto condiz com o escopo do projeto. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
 
 ## 3. Abordagem de Engenharia de Requisitos
 
@@ -132,90 +67,37 @@ Segue imagem com os processos abaixo:
 ### 3.3 Documentação de Requisitos
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Documentar requisitos de usuário|Linguagem natural|Software de edição de texto|
-|Documentar requisitos de sistema|Linguagem natural|Software de edição de texto|
-|Registrar os requisitos aprovados de forma clara|Linguagem natural|Software de edição de texto|
-|Documentar possíveis alterações nos requisitos|Linguagem natural|Software de edição de texto|
+|Especificação de Requisitos de Software (Software Requirements Specification ou SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
+|Requisitos de Usuário (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
+|Requisitos de Sistema (presente no SRS)|Linguagem natural e Notação gráfica|Software de edição de texto e editor gráfico Figma|
 
 ### 3.4 Verificação de Requisitos
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Realismo|Revisões de requisitos|Software de edição de texto|
-|Completude|Revisões de requisitos|Software de edição de texto|
-|Consistência|Revisões de requisitos|Software de edição de texto|
-|Validação|Revisões de requisitos|Software de edição de texto|
-|Verificabilidade|Geração de casos de teste|Telegram|
+Planejamento|Brainstorming|Serviço de Comunicação Remota e Software de edição de texto|
+Apresentação|Apresentação em Grupo por Chamada|Serviço de Comunicação Remota|
+Preparação|Encontro por Chamada de Vídeo|Serviço de Comunicação Remota|
+Reunião de Inspeção|Reunião por Chamada de Vídeo|Serviço de Comunicação Remota|
+Correção|Observar, Documentar e Consertar|Software de edição de texto|
+Acompanhamento|Brainstorming, Reunião|Serviço de Comunicação Remota|
 
 ### 3.5 Gerenciamento de Requisitos
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
-|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Google Sheets|
-|Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Google Sheets|
-|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Google Sheets|
+|Identificação dos Requisitos|Decidir um padrão de nomenclatura e aplicar sequencialmente sobre os requisitos|Software de edição de texto|
+|Armazenamento dos Requisitos|Armazenar a identificação e suas respectivas informações|Plataforma GitHub|
+|Rastreabilidade dos Requisitos|Matriz de Rastreabilidade|Software de edição de texto|
 
-## 4. Visão Geral do Projeto
+## 4. Lições Aprendidas
 
-### 4.1 Organização do Projeto 
+### 4.1 Unidade 1
 
-A organização do projeto irá levar em conta a abordagem de desenvolvimento de software escolhida, o Cascata. Nela utilizaremos uma estrutura tradicional de uma equipe de desenvolvimento de software, entretanto, algumas adaptações serão realizadas no modelo para uma melhor adequação no projeto. Levando em conta que no modelo cascata a fase de testes ocorre somente nos estágios finais e que desejamos a participação de todos na codificação, duas foram as modificações na organização: 
+Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferentes processos da Engenharia de Requisitos. Fomos também introduzidos as várias atividades da engenharia de requisitos e a alguns dos métodos que podem ser usados para concluí-las.
 
-- O gerente do projeto irá assumir também o papel de desenvolvedor caso suas atribuições semanais já tenham sido finalizadas.
-- O testador também irá acompanhar e participar do desenvolvimento caso suas atribuições semanais já tenham sido finalizadas.
+## Referências Bibliográficas
 
-Segue tabela com os papéis da equipe:
-
-|Papel|Atribuições|Responsáveis|Participantes|
-|:--------|:-----|:---------|:---------|
-|Gerente do projeto|Acompanhar e gerenciar a equipe; Garantir um bom andamento do projeto; Preparar atas para as reuniões; Criação e fechamento de issues; Participar com papel secundário no desenvolvimento; Documentos de abertura e fechamento de Sprints; Trabalhar na documentação.|Pedro Lucas||
-|Desenvolvedor|Codificação do software; Definir e seguir um padrão para organização dos códigos; Analisar e implementar possíveis melhorias na aplicação; Trabalhar na documentação.|Pedro Vieira e Victor Cabral| Vinícius Roriz, Lucas Braun e Pedro Lucas|
-|Testador|Executar testes no software; Resolução de bugs; Definir e preparar ambiente de desenvolvimento; Participar com papel secundário no desenvolvimento; Trabalhar na documentação.|Vinícius Roriz e Lucas Braun|Pedro Vieira e Victor Cabral|
-### 4.2 Planejamento das Fases e/ou Iterações do Projeto
-
-|Sprint|Produto(Entrega)|Data Início|Data Fim|
-|:--------|:-----|:---------|:---------|
-| Fase 1 |Definição dos Requisitos| 24/01/2022 | 16/03/2022 |
-| Fase 2 |Projeto de Sistema e Software| 17/03/2022 | 07/04/2022 |
-| Fase 3 |Implementação e teste unitário | 08/04/2022 | 28/04/2022 |
-| Fase 4 |Integração e teste de sistema| 29/04/2022 | 13/05/2022 |
-| Fase 5 |Operação e manutenção| 14/05/2022 | 17/05/2022|
-### 4.3	Matriz de Comunicação
-
-|Descrição|Área/Envolvidos|Periodicidade|Produtos Gerados|
-|:--------|:-----|:---------|:---------|
-|Acompanhamento das Atividades em Andamento|Equipe do Projeto|Semanal|Ata de reunião|
-|Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores|Equipe do Projeto|Quinzenal|Relatório de situação do projeto|
-|Comunicar situação do projeto|Equipe do Projeto e Professor|Semanal|Relatório de situação do projeto|
-
-### 4.4	Gerenciamento de Riscos
-
-Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
-
--	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
--	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
--	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
--	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
--	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
-
-### 4.5	Critérios de Replanejamento
-
-Replanejamento mediante:
-- Orientação do monitor ou professor responsável pela turma;
-- Consenso entre o grupo;
-
-## 5. Lições Aprendidas
-
-### 5.1 Unidade 1
-
-Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferentes processos da Engenharia de Requisitos. Fomos também introduzidos as atividades de elicitação, análise, documentação, verificação e gerenciamento de requisitos e a alguns dos métodos que podem ser usados para concluí-las.
-
-Também revisamos as metodologias ágeis e exploramos mais o Cascata, que acabou sendo escolhido para o projeto da disciplina. Ainda sobre as metodologias, aprendemos que se pode utilizar princípios de práticas ágeis mesmo quando a estrutura principal utilizada é sequencial.
-
-### 5.2 Unidade 2
-
-## 6. Referências Bibliográficas
-
-SOMMERVILLE, Ian. Engenharia de Software. 10ª ed., Pearson, 2018.
+Sommerville, I., Engenharia de software. 9th ed., Pearson Addison Wesley, 2011.
 
 Kotonya, G. and Sommerville, I. (1998) Requirements Engineering: Processes and Techniques. John Wiley & Sons, Chichester.
