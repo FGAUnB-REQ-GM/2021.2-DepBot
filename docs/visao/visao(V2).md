@@ -211,7 +211,7 @@ Também revisamos as metodologias ágeis e exploramos mais o Cascata, que acabou
 
 ### 5.2 Unidade 2
 
-Na Unidade 2, aprendemos mais sobre os requisitos funcionais, não funcionais, e suas classificações propostas por Sommerville. Também aprendemos a diferenciar requisitos de regras de negócio.
+Na Unidade 2, aprendemos mais sobre os requisitos funcionais, não funcionais, e suas classificações propostas por Sommerville. Também aprendemos a diferenciar requisitos de regras de negócio e a organizar o projeto no formato Kanban.
 
 Aprendemos também sobre o backlog do produto, e como quebrar o projeto em épicos, features, e user stories. E por fim, aprendemos como definir e apresentar uma proposta de MVP através de um modelo chamado Canvas MVP, que involve cronograma, jornadas, definição de personas, resultados esperados, funcionalidades, e métricas para validação.
 
