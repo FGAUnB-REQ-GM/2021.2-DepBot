@@ -18,7 +18,7 @@
 |15/02/2022|0.12|Adicionando MVP| Pedro Vieira e Victor Cabral |
 |23/02/2022|0.13|Alteração do Cronograma| Pedro Cassiano |
 |23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
-
+|23/02/2022|0.15|Alteração dos requisitos conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -53,53 +53,48 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 
 |Requisito|Épico|Descrição|
 |--------|-----|---------|
-|**RF1**| Deputados | Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
-|**RF2**| Deputados | Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
-|**RF3**| Deputados | Listar os partidos na qual os deputados são associados |
-|**RF4**| Deputados | Pesquisar deputados por nome e sobrenome, partido e UF |
-|**RF5**| Deputados | Disponibilizar informações sobre as despesas com exercício parlamentar do deputado |
-|**RF6**| Deputados | Disponibilizar informações sobre as frentes parlamentares das quais o deputado é integrante |
-|**RF7**| Informativo | Disponibilizar informações sobre as votações que ocorreram no plenário |
-|**RF8**| Informativo | Apresentar informações sobre a Câmara dos Deputados |
-|**RF9**| Informativo | Listar todas as UFs com siglas e nomes por extenso |
-|**RF10**| Informativo | Disponibilizar informações sobre as eleições |
-|**RF11**| Informativo | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
-|**RF12**| Sistema | Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
-|**RF13**| Sistema | O software deve conversar casualmente com o usuário |
-|**RF14**| Sistema | O software deve, em caso de falha na compreensão, demonstrar o não entendimento da solicitação do usuário |
-|**RF15**| Sistema | Responder as saudações digitadas pelo usuário |
+|**RF1**| Gerenciamento de Informações sobre Deputados | Consultar deputados federais |
+|**RF2**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre o deputado |
+|**RF3**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre os partidos da Câmara dos Deputados |
+|**RF4**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre as despesas com exercício parlamentar do deputado |
+|**RF5**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre as frentes parlamentares das quais o deputado é integrante |
+|**RF6**| Gerenciamento de Informações Gerais | Consultar informações sobre as votações que ocorreram no plenário |
+|**RF7**| Gerenciamento de Informações Gerais | Consultar informações sobre as eleições |
+|**RF8**| Gerenciamento de Informações Gerais | Consultar informações sobre a Câmara dos Deputados |
+|**RF9**| Execuções Dinâmicas do Sistema | Consultar sobre os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
+|**RF10**| Execuções Dinâmicas do Sistema | Consultar as possíveis funcionalidades do bot |
+|**RF11**| Execuções Dinâmicas do Sistema | Demonstrar o não entendimento da solicitação em caso de falha na compreensão |
+|**RF12**| Execuções Dinâmicas do Sistema | Responder às saudações digitadas |
 
 #### 1.4.2	Requisitos Não-Funcionais
 
 |Requisito|Descrição|
 |--------|---------|
 |**RNF1**| A linguagem de programação usada será Python |
-|**RNF2**| O bot deverá conversar em português |
-|**RNF3**| O bot usa a API dos Dados Abertos da Câmara dos Deputados |
-|**RNF4**| O sistema deverá utilizar exclusivamente a api dos Dados Abertos da Câmara dos Deputados |
-|**RNF5**| O software deve mostrar informações sem viés político |
+|**RNF2**| O bot usa a API dos Dados Abertos da Câmara dos Deputados |
+|**RNF3**| O bot deve conversar em português |
+|**RNF4**| O bot deve conversar casualmente |
+|**RNF5**| Consultar deputados por nome e sobrenome, partido e UF |
 
 ### 1.5	Mínimo Produto Viável (MVP)
 
 |Requisito|Descrição|
 |--------|---------|
-|**RF1**| Permitir a pesquisa de deputados federais que estão em exercício e ex-deputados federais |
-|**RF2**| Disponibilizar informações sobre o deputado como nome, partido, sexo, ocupações, profissões, votações e escolaridade |
-|**RF3**| Listar os partidos na qual os deputados são associados |
-|**RF8**| Apresentar informações sobre a Câmara dos Deputados |
-|**RF9**| Listar todas as UFs com siglas e nomes por extenso |
-|**RF11** | Definir e descrever os termos usados pela API dos Dados Abertos da Câmara dos Deputados |
-|**RF12**| Auxiliar através de comandos _/help_ e _/ajuda_ as possíveis funcionalidades do bot |
-|**RNF1** | A linguagem de programação usada será Python |
-|**RNF2** | O bot deverá conversar em português |
-|**RNF3** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
-|**RNF4**| O sistema deverá utilizar exclusivamente a api dos Dados Abertos da Câmara dos Deputados |
-|**RNF5** | O software deve mostrar informações sem viés político |
+|**RF1**| Consultar deputados federais que estão em exercício e ex-deputados federais |
+|**RF2**| Consultar informações sobre o deputado |
+|**RF3**| Consultar informações sobre os partidos da Câmara dos Deputados |
+|**RF10**| Consultar as possíveis funcionalidades do bot |
+|**RF11**| Demonstrar o não entendimento da solicitação em caso de falha na compreensão |
+|**RF12** | Responder às saudações digitadas |
+|**RNF1**| A linguagem de programação usada será Python |
+|**RNF2** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
+|**RNF3** | O bot deve conversar em português |
+|**RNF5** | Consultar deputados por nome e sobrenome, partido e UF |
 
-### 1.6	Organização dos requisitos conforme SAFe
+### 1.6	Backlog do Produto
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V2.jpg?raw=true">
 </p>
 
 ## 2. Abordagem de Desenvolvimento de Software
