@@ -19,6 +19,7 @@
 |23/02/2022|0.13|Alteração do Cronograma| Pedro Cassiano |
 |23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
 |23/02/2022|0.15|Alteração dos requisitos conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
+|24/02/2022|0.16|Alteração dos requisitos conforme feedback | Vinicius Roriz |
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -209,6 +210,10 @@ Na Unidade 1 foi possível aprender sobre os fundamentos, abordagens e diferente
 Também revisamos as metodologias ágeis e exploramos mais o Cascata, que acabou sendo escolhido para o projeto da disciplina. Ainda sobre as metodologias, aprendemos que se pode utilizar princípios de práticas ágeis mesmo quando a estrutura principal utilizada é sequencial.
 
 ### 5.2 Unidade 2
+
+Na Unidade 2, aprendemos mais sobre os requisitos funcionais, não funcionais, e suas classificações propostas por Sommerville. Também aprendemos a diferenciar requisitos de regras de negócio.
+
+Aprendemos também sobre o backlog do produto, e como quebrar o projeto em épicos, features, e user stories. E por fim, aprendemos como definir e apresentar uma proposta de MVP através de um modelo chamado Canvas MVP, que involve cronograma, jornadas, definição de personas, resultados esperados, funcionalidades, e métricas para validação.
 
 ## 6. Referências Bibliográficas
 
