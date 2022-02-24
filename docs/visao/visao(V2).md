@@ -187,13 +187,9 @@ Segue tabela com os papéis da equipe:
 
 ### 4.4	Gerenciamento de Riscos
 
-Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
-
--	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
--	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
--	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
--	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
--	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
+*	No caso de algum aplicativo de mensagens ser bloqueado no país, deveremos transferir o projeto para outro aplicativo de mensagens;
+*	Se algum membro do projeot perder os documentos ou códigos do software, teremos um backup do projeto nos computadores de cada membro;
+* Caso a maioria dos membros do grupo tranquem a matéria ou não consigam mais participar do projeto, os membros restantes continuarão o projeto;
 
 ### 4.5	Critérios de Replanejamento
 
