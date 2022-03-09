@@ -20,6 +20,8 @@
 |23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
 |23/02/2022|0.15|Alteração dos requisitos conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 |24/02/2022|0.16|Alteração dos requisitos conforme feedback | Vinicius Roriz |
+|09/03/2022|0.16|Versão revisada (ver comentários) | George Marsicano |
+
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
