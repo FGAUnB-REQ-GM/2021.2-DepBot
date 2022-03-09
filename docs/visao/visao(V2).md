@@ -79,6 +79,8 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 
 ### 1.5	Mínimo Produto Viável (MVP)
 
+<span style="color:red">Para cada feature registrada na coluna "descrição", serão implementadas todas as histórias?</span>
+
 |Requisito|Descrição|
 |--------|---------|
 |**RF1**| Consultar deputados federais que estão em exercício e ex-deputados federais |
@@ -93,6 +95,8 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |**RNF5** | Consultar deputados por nome e sobrenome, partido e UF |
 
 ### 1.6	Backlog do Produto
+
+<span style="color:red">Em todas as histórias faltam os "objetivos de negóvio / valor."</span>
 
 <p align="center">
   <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V2.jpg?raw=true">
