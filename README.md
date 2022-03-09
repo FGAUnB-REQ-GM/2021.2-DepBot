@@ -10,6 +10,7 @@
 
 ## Links Referentes ao projeto:
 
+<span style="color:red">O Kanban está desatualizado. Não consta os itens do backlog do produto. Aliás, não tem uma coluna de backlog de produto.</span>
 <p> Kanban : https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1</p>
 <p> GitPages : https://fgaunb-req-gm.github.io/2021.2-DepBot/</p>
 <p> Miro : https://miro.com/app/board/uXjVONKvrRM=/?invite_link_id=343149403427</p>
