@@ -20,6 +20,8 @@
 |23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
 |23/02/2022|0.15|Alteração dos requisitos conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 |24/02/2022|0.16|Alteração dos requisitos conforme feedback | Vinicius Roriz |
+|09/03/2022|0.16|Versão revisada (ver comentários) | George Marsicano |
+
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -79,6 +81,8 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 
 ### 1.5	Mínimo Produto Viável (MVP)
 
+<span style="color:red">Para cada feature registrada na coluna "descrição", serão implementadas todas as histórias?</span>
+
 |Requisito|Descrição|
 |--------|---------|
 |**RF1**| Consultar deputados federais que estão em exercício e ex-deputados federais |
@@ -93,6 +97,8 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |**RNF5** | Consultar deputados por nome e sobrenome, partido e UF |
 
 ### 1.6	Backlog do Produto
+
+<span style="color:red">Em todas as histórias faltam os "objetivos de negóvio / valor."</span>
 
 <p align="center">
   <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V2.jpg?raw=true">
@@ -187,13 +193,9 @@ Segue tabela com os papéis da equipe:
 
 ### 4.4	Gerenciamento de Riscos
 
-Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:  
-
--	Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;
--	Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto;
--	Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados;
--	Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado;
--	Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);
+*	No caso de algum aplicativo de mensagens ser bloqueado no país, deveremos transferir o projeto para outro aplicativo de mensagens;
+*	Se algum membro do projeot perder os documentos ou códigos do software, teremos um backup do projeto nos computadores de cada membro;
+* Caso a maioria dos membros do grupo tranquem a matéria ou não consigam mais participar do projeto, os membros restantes continuarão o projeto;
 
 ### 4.5	Critérios de Replanejamento
 
