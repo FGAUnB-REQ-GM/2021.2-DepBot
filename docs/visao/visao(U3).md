@@ -20,7 +20,9 @@
 |23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
 |23/02/2022|0.15|Alteração dos requisitos conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 |24/02/2022|0.16|Alteração dos requisitos conforme feedback | Vinicius Roriz |
-|14/03/2022|0.17|Atualização no Backlog do Produto conforme feedback | Victor Cabral |
+|09/03/2022|0.17|Versão revisada (ver comentários) | George Marsicano |
+|14/03/2022|0.18|Atualização no Backlog do Produto conforme feedback | Victor Cabral |
+|14/03/2022|0.19|Adição do Product Backlog Building|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -55,7 +57,7 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 
 |Requisito|Épico|Descrição|
 |--------|-----|---------|
-|**RF1**| Gerenciamento de Informações sobre Deputados | Consultar deputados federais |
+|**RF1**| Gerenciamento de Informações sobre Deputados | Pesquisar deputados federais |
 |**RF2**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre o deputado |
 |**RF3**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre os partidos da Câmara dos Deputados |
 |**RF4**| Gerenciamento de Informações sobre Deputados | Consultar informações sobre as despesas com exercício parlamentar do deputado |
@@ -76,13 +78,12 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |**RNF2**| O bot usa a API dos Dados Abertos da Câmara dos Deputados |
 |**RNF3**| O bot deve conversar em português |
 |**RNF4**| O bot deve conversar casualmente |
-|**RNF5**| Consultar deputados por nome e sobrenome, partido e UF |
 
 ### 1.5	Mínimo Produto Viável (MVP)
 
 |Requisito|Descrição|
 |--------|---------|
-|**RF1**| Consultar deputados federais que estão em exercício e ex-deputados federais |
+|**RF1**| Pesquisar deputados federais que estão em exercício e ex-deputados federais |
 |**RF2**| Consultar informações sobre o deputado |
 |**RF3**| Consultar informações sobre os partidos da Câmara dos Deputados |
 |**RF10**| Consultar as possíveis funcionalidades do bot |
@@ -91,12 +92,17 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |**RNF1**| A linguagem de programação usada será Python |
 |**RNF2** | O bot usa a API dos Dados Abertos da Câmara dos Deputados |
 |**RNF3** | O bot deve conversar em português |
-|**RNF5** | Consultar deputados por nome e sobrenome, partido e UF |
 
-### 1.6	Backlog do Produto
+### 1.6	Backlog do Produto (SAFe)
 
 <p align="center">
   <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/visao/docs/assets/requisitosSAFe_V3.jpg?raw=true">
+</p>
+
+### 1.7	Product Backlog Building (PBB Canvas)
+
+<p align="center">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/visao/docs/assets/pbb_V1.jpg?raw=true">
 </p>
 
 ## 2. Abordagem de Desenvolvimento de Software
