@@ -80,6 +80,7 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 |**RNF4**| O bot deve conversar casualmente |
 
 ### 1.5	Mínimo Produto Viável (MVP)
+O MVP (Minimum Viable Product), consiste em uma mínima versão do produto com funcionalidades mais necessárias para garantir o funcionamento do produto conforme o planejado. Dado esse fato, os requisitos escolhidos para o MVP estão listados abaixo, vale lembrar que todas as US associadas às suas features deverão ser implementadas.
 
 |Requisito|Descrição|
 |--------|---------|
