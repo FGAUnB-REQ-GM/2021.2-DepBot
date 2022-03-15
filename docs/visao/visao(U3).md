@@ -96,7 +96,7 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 ### 1.6	Backlog do Produto
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V3.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/visao/docs/assets/requisitosSAFe_V3.jpg?raw=true">
 </p>
 
 ## 2. Abordagem de Desenvolvimento de Software
