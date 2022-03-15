@@ -20,6 +20,7 @@
 |23/02/2022|0.14|Generalização do aplicativo de mensagens e alteração do RNF4 | Pedro Cassiano |
 |23/02/2022|0.15|Alteração dos requisitos conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 |24/02/2022|0.16|Alteração dos requisitos conforme feedback | Vinicius Roriz |
+|14/03/2022|0.17|Atualização no Backlog do Produto conforme feedback | Victor Cabral |
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -95,7 +96,7 @@ O objetivo do produto é fornecer informações sobre a Câmara dos Deputados à
 ### 1.6	Backlog do Produto
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V2.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V3.jpg?raw=true">
 </p>
 
 ## 2. Abordagem de Desenvolvimento de Software
