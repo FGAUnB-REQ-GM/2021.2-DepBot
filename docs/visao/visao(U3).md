@@ -100,12 +100,6 @@ O MVP (Minimum Viable Product), consiste em uma mínima versão do produto com f
   <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/visao/docs/assets/requisitosSAFe_V3.jpg?raw=true">
 </p>
 
-### 1.7	Product Backlog Building (PBB Canvas)
-
-<p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/visao/docs/assets/pbb_V1.jpg?raw=true">
-</p>
-
 ## 2. Abordagem de Desenvolvimento de Software
 
 Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolvimento do projeto foi o Cascata, devido à capacidade de estimar e prever o tempo e orçamento totais do projeto que ele proporciona, além de possuir etapas estruturadas e foco no planejamento. Sommerville informa que o Cascata deve ser usado apenas quando os requisitos são bem conhecidos e pouco prováveis de sofrerem alteração, e nesse aspecto o escopo do projeto condiz com a abordagem. Também serão utilizadas algumas práticas do XP, como a Propriedade Coletiva, que estipula que todos podem modificar o código a qualquer momento, e a Programação em Pares, que além de garantir uma maior qualidade de código e reduzir a necessidade de revisão, ajuda na interação entre os participantes.
