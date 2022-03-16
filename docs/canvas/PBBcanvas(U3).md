@@ -9,6 +9,6 @@
 ## Imagem do documentos Product Backlog Building (PBB Canvas):
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/pbb_V1.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/pbb_V2.jpg?raw=true">
 </p>
 
