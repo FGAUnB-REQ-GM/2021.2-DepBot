@@ -23,6 +23,7 @@
 |09/03/2022|0.17|Versão revisada (ver comentários) | George Marsicano |
 |14/03/2022|0.18|Atualização no Backlog do Produto conforme feedback | Victor Cabral |
 |14/03/2022|0.19|Adição do Product Backlog Building|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
+|16/03/2022|0.20|Adição das lições aprendidas na Unidade 3|Pedro Vieira|
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -216,6 +217,13 @@ Também revisamos as metodologias ágeis e exploramos mais o Cascata, que acabou
 Na Unidade 2, aprendemos mais sobre os requisitos funcionais, não funcionais, e suas classificações propostas por Sommerville. Também aprendemos a diferenciar requisitos de regras de negócio e a organizar o projeto no formato Kanban.
 
 Aprendemos também sobre o backlog do produto, e como quebrar o projeto em épicos, features, e user stories. E por fim, aprendemos como definir e apresentar uma proposta de MVP através de um modelo chamado Canvas MVP, que involve cronograma, jornadas, definição de personas, resultados esperados, funcionalidades, e métricas para validação.
+
+### 5.3 Unidade 3
+
+Na Unidade 3, como lição aprendida tivemos o PBB, no qual nos possibilitou a criação e mapeamento do Product Backlog, onde a partir dele foi determinado os problemas, expectativas, as personas e suas respectivas funcionalidades do produto, tudo consolidado no Canvas, sendo bem prático a sua contextualização. Também aprendemos sobre a técnica COORG, na qual se mostra muito eficiente na priorização do Backlog.
+
+Além disso, tivemos conhecimento também do processo de mapeamento de histórias junto de seus respectivos critérios de aceitação, para auxiliar no entendimento dos requisitos e assim manter a organização do projeto. 
+Tivemos contato também com Behavior Driven Development (BDD), no qual nos ajudou na validação dos critérios de aceitação das Steps Maps.
 
 ## 6. Referências Bibliográficas
 
