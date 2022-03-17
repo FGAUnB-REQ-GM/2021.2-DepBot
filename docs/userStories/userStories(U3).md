@@ -14,7 +14,7 @@
 
 ## Critérios de Aceitação
 
-	Como todas as Histórias de Usuário se baseiam em pesquisa e possuem um fluxo semelhante, a seguinte lista de Critérios de Aceitação se aplica a todas elas: 
+ Como todas as Histórias de Usuário se baseiam em pesquisa e possuem um fluxo semelhante, a seguinte lista de Critérios de Aceitação se aplica a todas elas: 
 	
  1) O usuário que não tem o bot inicializado não conseguirá realizar a pesquisa;
 
