@@ -9,6 +9,6 @@
 ## Imagem do Behavior Drive Development (BDD):
 
 <p align="center">
-  <!-- <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/us_v1.jpg?raw=true">  adicao da imagem de BDD -->
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/bdd_V1.jpg?raw=true">
 </p>
 
