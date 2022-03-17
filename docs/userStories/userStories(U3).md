@@ -17,9 +17,3 @@
 <p align="center">
   <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/criteriosAceitacao_V1.jpg?raw=true">
 </p>
-
-##  BDD: Behavior Driven Development
-
-<p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/bdd_V1.jpg?raw=true">
-</p>
