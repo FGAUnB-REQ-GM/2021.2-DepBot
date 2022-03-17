@@ -4,19 +4,22 @@
 |Data|Versão|Modificação|Autores|
 |:---|:-----|:----------|:------|
 |16/03/2022|0.1|Criação do documento|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
-
+|16/03/2022|0.2|Adição do BDD e correções nos Critérios de Aceitação|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 
 ## Imagem da Tabela de User Stories:
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/userStories_V1.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/historiasUsuario_V1.jpg?raw=true">
 </p>
 
 ## Critérios de Aceitação
 
- Como todas as Histórias de Usuário se baseiam em pesquisa e possuem um fluxo semelhante, a seguinte lista de Critérios de Aceitação se aplica a todas elas: 
-	
- 1) O usuário que não tem o bot inicializado não conseguirá realizar a pesquisa;
+<p align="center">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/criteriosAceitacao_V1.jpg?raw=true">
+</p>
 
- 2) O usuário que não utilizar o comando correto não conseguirá realizar a pesquisa;
+##  BDD: Behavior Driven Development
 
+<p align="center">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/bdd_V1.jpg?raw=true">
+</p>
