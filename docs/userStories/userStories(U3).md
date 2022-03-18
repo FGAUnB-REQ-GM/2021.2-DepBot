@@ -1,4 +1,4 @@
-# User Stories MVP
+# User Stories MVP e Critérios de Aceitação
 
 ## Histórico de Versões
 |Data|Versão|Modificação|Autores|
