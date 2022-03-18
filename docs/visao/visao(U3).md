@@ -24,6 +24,8 @@
 |14/03/2022|0.18|Atualização no Backlog do Produto conforme feedback | Victor Cabral |
 |14/03/2022|0.19|Adição do Product Backlog Building|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |16/03/2022|0.20|Adição das lições aprendidas na Unidade 3|Pedro Vieira|
+|17/03/2022|0.21|Correção no tópico 4.2 conforme feedback|Pedro Vieira|
+
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
 | | |
@@ -176,8 +178,8 @@ Segue tabela com os papéis da equipe:
 
 |Sprint|Produto(Entrega)|Data Início|Data Fim|
 |:--------|:-----|:---------|:---------|
-| Fase 1 |Definição dos Requisitos| 24/01/2022 | 16/03/2022 |
-| Fase 2 |Projeto de Sistema e Software| 17/03/2022 | 07/04/2022 |
+| Fase 1 |Definição dos Requisitos e Documentos Iniciais| 24/01/2022 | 17/03/2022 |
+| Fase 2 |Projeto de Sistema e Software| 18/03/2022 | 07/04/2022 |
 | Fase 3 |Integração e teste de sistema | 08/04/2022 | 28/04/2022 |
 | Fase 4 |Operação e manutenção| 29/04/2022 | 13/05/2022 |
 ### 4.3	Matriz de Comunicação
