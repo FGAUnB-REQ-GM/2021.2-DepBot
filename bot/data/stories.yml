@@ -28,3 +28,27 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: interactive_story_1
+
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request_names
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: vincent
+  - slot_was_set:
+    - requested_slot: sobrenome
+  - slot_was_set:
+    - sobrenome: vieira
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
+  - action: action_hello_world2
+

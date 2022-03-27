@@ -1,34 +1,55 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- deny
+- request_names
+- goodbye
+- affirm
+- mood_great
+- mood_unhappy
+- bot_challenge
+slots:
+  name:
+    type: text
+    #influence_conversation: true
+  sobrenome:
+    type: text
+    #influence_conversation: true
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_name:
+  - text: Ok, me informe o nome do Deputado
+  utter_ask_sobrenome:
+  - text: Ótimo, agora me informe o sobrenome
+  utter_submit:
+  - text: Ok. Thanks!
+  utter_slots_values:
+  - text: Deputado é {name} {sobrenome}!
+actions:
+- utter_greet
+- utter_slots_values
+- utter_submit
+- action_hello_world2
+forms:
+  name_form:
+    name:
+    - type: from_text
+    sobrenome:
+    - type: from_text 
+
