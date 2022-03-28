@@ -11,6 +11,7 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
+- request_partido
 slots:
   name:
     type: text
@@ -18,10 +19,14 @@ slots:
   sobrenome:
     type: text
     #influence_conversation: true
+  idDep:
+    type: text
+  partidoDep:
+    type: text
 
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. Por favor digite algo em que possa te ajudar =)
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -38,9 +43,12 @@ responses:
   utter_ask_sobrenome:
   - text: Ótimo, agora me informe o sobrenome
   utter_submit:
-  - text: Ok. Thanks!
+  - text: Entendi, estou preparando os dados
   utter_slots_values:
-  - text: Deputado é {name} {sobrenome}!
+  - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
+  utter_slots_values_partido:
+  - text: O partido do(a) deputado(a) é {partidoDep} !
+
 actions:
 - utter_greet
 - utter_slots_values

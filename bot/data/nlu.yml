@@ -81,3 +81,10 @@ nlu:
     - Deputado
     - Me fale sobre um deputado
     - Quero saber sobre um deputado
+- intent: request_partido
+  examples: |
+    - Quero saber o partido
+    - partido
+    - Qual o partido ?
+    - Me fala o partido
+

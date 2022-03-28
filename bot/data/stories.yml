@@ -52,3 +52,8 @@ stories:
   - action: utter_slots_values
   - action: action_hello_world2
 
+- story: informa o partido do deputado
+  steps:
+  - intent: request_partido
+  - action: utter_slots_values_partido 
+
