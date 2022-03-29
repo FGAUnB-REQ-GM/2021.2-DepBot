@@ -55,5 +55,16 @@ stories:
 - story: informa o partido do deputado
   steps:
   - intent: request_partido
-  - action: utter_slots_values_partido 
+  - action: utter_slots_values_partido
+
+- story: informa o email do deputado
+  steps:
+  - intent: request_email
+  - action: action_mostraDados
+
+- story: informa o dia das eleições
+  steps:
+  - intent: request_dia_eleicao
+  - action: utter_request_dia_eleicao
+ 
 

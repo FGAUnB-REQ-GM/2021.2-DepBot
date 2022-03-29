@@ -12,6 +12,9 @@ intents:
 - mood_unhappy
 - bot_challenge
 - request_partido
+- request_email
+- request_dia_eleicao
+
 slots:
   name:
     type: text
@@ -39,7 +42,7 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_ask_name:
-  - text: Ok, me informe o nome do Deputado
+  - text: Para eu conseguir os dados, me informe o primeiro  nome do Deputado que deseja consultar.
   utter_ask_sobrenome:
   - text: Ótimo, agora me informe o sobrenome
   utter_submit:
@@ -48,12 +51,19 @@ responses:
   - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
   utter_slots_values_partido:
   - text: O partido do(a) deputado(a) é {partidoDep} !
+  utter_request_dia_eleicao:
+  - text: |
+      Estou muito contente com sua curiosidade sobre as eleições, já que é um momento muito importante para todos definir do que será daqui pra frente =)
+      As eleições para presidente da República, gorvenadores, senadores e deputados federais, estaduais e distritais está prevista para ocorrer no dia 02 de Outubro.
+      Anote aí viu !!!
+      Mas sempre que tiver alguma dúvida relacionada às eleições podem procurar a mim =)
 
 actions:
 - utter_greet
 - utter_slots_values
 - utter_submit
 - action_hello_world2
+- action_mostraDados
 forms:
   name_form:
     name:

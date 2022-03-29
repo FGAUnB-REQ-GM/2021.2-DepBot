@@ -88,3 +88,17 @@ nlu:
     - Qual o partido ?
     - Me fala o partido
 
+- intent: request_email
+  examples: |
+    - Quero saber o email
+    - email
+    - Qual o email ?
+    - Me fala o email
+
+- intent: request_dia_eleicao
+  examples: |
+    - Quando será o dia das eleições ?
+    - Dia eleições
+    - Eleições dia
+    - Me informe o dia das eleições
+

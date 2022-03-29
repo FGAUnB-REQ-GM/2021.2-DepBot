@@ -35,8 +35,8 @@ class ActionHelloWorld(Action):
         SlotSet("partidoDep" ,partidoDeputado)
 
        # dispatcher.utter_message(text="Hello World!123")
-        print(partidoDeputado)
-        return [SlotSet("partidoDep" ,partidoDeputado) , SlotSet("name", None) , SlotSet("sobrenome" , None)]
+        #print(type(nomeP))
+        return [SlotSet("partidoDep" ,partidoDeputado) , SlotSet("idDep", idDeputado) ,  SlotSet("name", None) , SlotSet("sobrenome" , None)]
 
 class MostraDados(Action):
     def name(self) -> Text:
@@ -46,5 +46,11 @@ class MostraDados(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         idDeputado = tracker.get_slot("idDep")
-        print(idDeputado)
+        idDeputadoStr = str(idDeputado)
+        request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%idDeputadoStr).json()
+        email = request["dados"]["ultimoStatus"]["email"]
+        texto = "O email é " + email + "!"
+        dispatcher.utter_message(text=texto)
+        #print('https://dadosabertos.camara.leg.br/api/v2/deputados/$s'%idDeputadoStr)
+        print(email)
         return []
