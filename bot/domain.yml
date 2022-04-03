@@ -14,7 +14,7 @@ intents:
 - request_partido
 - request_email
 - request_dia_eleicao
-
+- request_situacao
 slots:
   name:
     type: text
@@ -64,6 +64,7 @@ actions:
 - utter_submit
 - action_hello_world2
 - action_mostraDados
+- action_mostraSituacao
 forms:
   name_form:
     name:

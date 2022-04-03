@@ -62,6 +62,11 @@ stories:
   - intent: request_email
   - action: action_mostraDados
 
+- story: informa a situação do deputado
+  steps:
+  - intent: request_situacao
+  - action: action_mostraSituacao
+
 - story: informa o dia das eleições
   steps:
   - intent: request_dia_eleicao

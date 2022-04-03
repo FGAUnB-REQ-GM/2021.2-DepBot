@@ -54,3 +54,27 @@ class MostraDados(Action):
         #print('https://dadosabertos.camara.leg.br/api/v2/deputados/$s'%idDeputadoStr)
         print(email)
         return []
+
+class MostraSituacao(Action):
+    def name(self) -> Text:
+        return "action_mostraSituacao"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        idDeputado = tracker.get_slot("idDep")
+        idDeputadoStr = str(idDeputado)
+        request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%idDeputadoStr).json()
+        situacao = request["dados"]["ultimoStatus"]["situacao"]
+        exer = "Exercício"
+        texto = ""
+        if situacao == exer:
+            texto = "O Deputado está em exercício."
+        else:
+            texto = "O Deputado não está mais em exercício."
+        dispatcher.utter_message(text=texto)
+        #print('https://dadosabertos.camara.leg.br/api/v2/deputados/$s'%idDeputadoStr)
+        print(type(situacao))
+        print(texto)
+        return []
+
