@@ -27,5 +27,25 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: utter_submit
-  - action: utter_slots_values
   - action: action_hello_world2
+  - action: utter_slots_values
+
+- rule: Activate form partido político
+  steps:
+  - intent: request_partido_politico
+  - action: utter_request_partido_politico
+  - action: partido_form
+  - active_loop: partido_form
+
+- rule: Submit form partido político
+  condition:
+  - active_loop: partido_form
+  steps:
+  - action: partido_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_submit
+  - action: action_setIdDeputado
+  - action: utter_slots_values_partido_politico
+

@@ -49,13 +49,33 @@ stories:
     - requested_slot: null
   - active_loop: null
   - action: utter_submit
-  - action: utter_slots_values
   - action: action_hello_world2
+  - action: utter_slots_values
+
+- story: interactive_story_1_partido_politico
+
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request_partido_politico
+  - action: utter_request_partido_politico
+  - action: partido_form
+  - active_loop: partido_form
+  - slot_was_set:
+    - requested_slot: partidoPolitico
+  - slot_was_set:
+    - partidoPolitico: pt
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: action_setIdDeputado
+  - action: utter_slots_values_partido_politico
 
 - story: informa o partido do deputado
   steps:
-  - intent: request_partido
-  - action: utter_slots_values_partido
+  - intent: request_partido_deputado
+  - action: action_mostraPartidoDeputado
 
 - story: informa o email do deputado
   steps:
@@ -72,4 +92,13 @@ stories:
   - intent: request_dia_eleicao
   - action: utter_request_dia_eleicao
  
+- story: mostra lista de partidos
+  steps:
+  - intent: request_lista_partidos
+  - action: action_mostraListaPartidos
+
+- story: mostra Membros de partidos
+  steps:
+  - intent: request_membros_partidos
+  - action: action_mostraMembrosPartido
 

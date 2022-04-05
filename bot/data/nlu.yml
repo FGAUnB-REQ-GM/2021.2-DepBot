@@ -81,7 +81,7 @@ nlu:
     - Deputado
     - Me fale sobre um deputado
     - Quero saber sobre um deputado
-- intent: request_partido
+- intent: request_partido_deputado
   examples: |
     - Quero saber o partido
     - partido
@@ -106,4 +106,21 @@ nlu:
     - Dia eleições
     - Eleições dia
     - Me informe o dia das eleições
+- intent: request_partido_politico
+  examples: |
+    - Quero saber sobre um partido político
+    - Partido político
+    - Me fale sobre um partido específico
+    - Informações sobre um partido político
+- intent: request_lista_partidos
+  examples: |
+    - Quero saber a lista de partidos
+    - Lista
+    - Me mostre a lista de partidos
+- intent: request_membros_partidos
+  examples: |
+    - Quantos membros possui ?
+    - Quantidade Membros
+    - Membros
+    - Me mostre o número de membros
 
