@@ -81,6 +81,7 @@ class MostraDados(Action):
             email = request["dados"]["ultimoStatus"]["email"]
             texto = "O email é " + email + "!"
             dispatcher.utter_message(text=texto)
+            return [SlotSet("name", None) , SlotSet("sobrenome" , None)]
         else:
             textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
             dispatcher.utter_message(text=textoErro)
@@ -101,6 +102,7 @@ class MostraPartidoDeputado(Action):
             partido = request["dados"]["ultimoStatus"]["siglaPartido"]
             texto = "O partido é " + partido + "!"
             dispatcher.utter_message(text=texto)
+            return [SlotSet("name", None) , SlotSet("sobrenome" , None)]
 
         else:
             textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."

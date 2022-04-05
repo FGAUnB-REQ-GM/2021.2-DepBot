@@ -34,7 +34,7 @@ slots:
 
 responses:
   utter_greet:
-  - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. Por favor digite algo em que possa te ajudar =)
+  - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. =)
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -66,6 +66,9 @@ responses:
   - text: |
       Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro, ou se não souber agora eu posso mostrar uma lista de partidos dispoíveis se quiser.
       Bsta digitar "Lista Partidos" que posso trazer uma lista para você =).
+  utter_mostra_func:
+  - text : |
+      Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados      sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
 
 actions:
 - utter_greet
