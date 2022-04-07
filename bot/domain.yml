@@ -1,34 +1,96 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- deny
+- request_names
+- goodbye
+- affirm
+- mood_great
+- mood_unhappy
+- bot_challenge
+- request_partido_deputado
+- request_email
+- request_dia_eleicao
+- request_situacao
+- request_partido_politico
+- request_lista_partidos
+- request_membros_partidos
+slots:
+  name:
+    type: text
+    #influence_conversation: true
+  sobrenome:
+    type: text
+    #influence_conversation: true
+  idDep:
+    type: text
+  partidoPolitico:
+    type: text
+  idPartidoPolitico:
+    type: text
+
+responses:
+  utter_greet:
+  - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. =)
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_name:
+  - text: Para eu conseguir os dados, me informe o primeiro  nome do Deputado que deseja consultar.2
+  utter_ask_sobrenome:
+  - text: Ótimo, agora me informe o sobrenome 
+  utter_submit:
+  - text: Entendi, estou preparando os dados
+  utter_slots_values:
+  - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
+  utter_slots_values_partido_politico:
+  - text: Encontrei dados sobre o partido! O que gostaria de ver sobre ele(a) ?
+  utter_request_dia_eleicao:
+  - text: |
+      Estou muito contente com sua curiosidade sobre as eleições, já que é um momento muito importante para todos definir do que será daqui pra frente =)
+      As eleições para presidente da República, gorvenadores, senadores e deputados federais, estaduais e distritais está prevista para ocorrer no dia 02 de Outubro.
+      Anote aí viu !!!
+      Mas sempre que tiver alguma dúvida relacionada às eleições podem procurar a mim =)
+  utter_request_partido_politico:
+  - text: |
+      Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro, ou se não souber agora eu posso mostrar uma lista de partidos dispoíveis se quiser.
+      Bsta digitar "Lista Partidos" que posso trazer uma lista para você =).
+  utter_mostra_func:
+  - text : |
+      Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados      sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
+
+actions:
+- utter_greet
+- utter_slots_values
+- utter_slots_values_partido_politico
+- utter_submit
+- action_hello_world2
+- action_setIdDeputado
+- action_mostraPartidoDeputado
+- action_mostraDados
+- action_mostraSituacao
+- action_mostraListaPartidos
+- action_mostraMembrosPartido
+forms:
+  name_form:
+    name:
+    - type: from_text
+    sobrenome:
+    - type: from_text
+  partido_form:
+    partidoPolitico:
+    - type: from_text
+
+
+
