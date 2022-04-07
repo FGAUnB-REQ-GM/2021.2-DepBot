@@ -25,6 +25,7 @@
 |14/03/2022|0.19|Adição do Product Backlog Building|Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz|
 |16/03/2022|0.20|Adição das lições aprendidas na Unidade 3|Pedro Vieira|
 |17/03/2022|0.21|Correção no tópico 4.2 conforme feedback|Pedro Vieira|
+|06/04/2022|0.22|Atualização nas Lições Aprendidas|Lucas Braun|
 
 ## 1. Visão Geral
 ### 1.1 Declaração do Problema
@@ -100,7 +101,7 @@ O MVP (Minimum Viable Product), consiste em uma mínima versão do produto com f
 ### 1.6	Backlog do Produto (SAFe)
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/visao/docs/assets/requisitosSAFe_V3.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/requisitosSAFe_V3.jpg?raw=true">
 </p>
 
 ## 2. Abordagem de Desenvolvimento de Software
