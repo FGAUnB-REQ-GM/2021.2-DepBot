@@ -88,6 +88,77 @@ class MostraDados(Action):
             return [Restarted()]
         return []
 
+class MostraReumoDeputado(Action):
+    def name(self) -> Text:
+        return "action_mostra_resumo"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        idDeputado = tracker.get_slot("idDep")
+        if(idDeputado != None):
+            idDeputadoStr = str(idDeputado)
+            request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%idDeputadoStr).json()
+            
+            nomeCivil = request["dados"]["nomeCivil"]
+            nomeEleitoral = request["dados"]["ultimoStatus"]["nomeEleitoral"]
+            email = request["dados"]["ultimoStatus"]["email"]
+            sexo = request["dados"]["sexo"]
+            sexoT = ''
+            if(sexo == 'F'):
+                sexoT = 'Feminino'
+            else:
+                sexoT = 'Masculino'
+            esolaridade = request["dados"]["escolaridade"]
+            ufNascimento = request["dados"]["ufNascimento"]
+            municipioNascimento = request["dados"]["municipioNascimento"]
+            
+            texto1 = 'Segue abaixo os dados que consegui sobre ' + nomeCivil
+            texto2 = '- Nome Civil: ' + nomeCivil + '\n' + '- Nome Eleitoral: ' + nomeEleitoral + '\n' + '- Email: ' + email + '\n' '- Sexo: ' + sexoT + '\n' + '- Escolaridade: ' + esolaridade + '\n' +  '- UF Nascimento: ' + ufNascimento + '\n' + '- Município Nascimento: ' + municipioNascimento
+            dispatcher.utter_message(text=texto1)
+            dispatcher.utter_message(text=texto2)
+            return [SlotSet("name", None) , SlotSet("sobrenome" , None)]
+        else:
+            textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
+            dispatcher.utter_message(text=textoErro)
+            return [Restarted()]
+        return []
+
+
+class MostraResumoPartido(Action):
+    def name(self) -> Text:
+        return "action_mostra_resumo_partido"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        idPartido = tracker.get_slot("idPartidoPolitico")
+        if(idPartido != None):
+            idPartidoStr = str(idPartido)
+
+            request = requests.get('https://dadosabertos.camara.leg.br/api/v2/partidos/%s'%idPartidoStr).json()
+            nomePartido = request["dados"]["nome"] 
+            siglaPartido = request["dados"]["sigla"]
+            situacaoPartido = request["dados"]["status"]["situacao"]
+            totalMembrosPartido = request["dados"]["status"]["totalMembros"]
+            nomeLider = request["dados"]["status"]["lider"]["nome"]
+
+            texto1 = "Segue abaixo o resumo dos dados do partido..."
+            texto2 = "- Nome: " + nomePartido + "\n" + "- Sigla: " + siglaPartido + "\n" + "- Situação: " + situacaoPartido + "\n" + "- Número de membros: " + totalMembrosPartido + "\n" + "- Nome do Líder: " + nomeLider 
+            dispatcher.utter_message(text=texto1)
+            dispatcher.utter_message(text=texto2)
+
+            return [SlotSet("partidoPolitico", None)]
+
+        else:
+            textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
+            dispatcher.utter_message(text=textoErro)
+            return [Restarted()]
+        return []
+
+
+
+
 class MostraPartidoDeputado(Action):
     def name(self) -> Text:
         return "action_mostraPartidoDeputado"

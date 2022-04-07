@@ -123,4 +123,21 @@ nlu:
     - Quantidade Membros
     - Membros
     - Me mostre o número de membros
+- intent: resumo_deputado
+  examples: |
+    - Resumo do deputado
+    - Me mostre o resumo do deputado
+    - Resumo
+    - Quero saber o resumo
+    - Informações gerais
+    - Informações
+
+- intent: resumo_partido
+  examples: |
+    - Resumo do partido
+    - Me mostre o resumo de um partido político
+    - Resumo partido político
+    - Quero saber o resumo do partido político
+    - Informações gerais
+    - Informações partido político
 

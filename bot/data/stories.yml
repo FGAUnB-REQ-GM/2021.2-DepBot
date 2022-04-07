@@ -54,7 +54,8 @@ stories:
   - active_loop: null
   - action: utter_submit
   - action: action_hello_world2
-  - action: utter_slots_values
+    # - action: utter_slots_values
+  - action: action_mostra_resumo
 
 - story: interactive_story_1_partido_politico
 
@@ -75,7 +76,8 @@ stories:
   - active_loop: null
   - action: utter_submit
   - action: action_setIdDeputado
-  - action: utter_slots_values_partido_politico
+    #- action: utter_slots_values_partido_politico
+  - action: action_mostra_resumo_partido
 
 - story: informa o partido do deputado
   steps:
@@ -106,4 +108,14 @@ stories:
   steps:
   - intent: request_membros_partidos
   - action: action_mostraMembrosPartido
+
+- story: mostra resumo do deputado
+  steps:
+  - intent: resumo_deputado
+  - action: action_mostra_resumo 
+
+- story: mostra resumo do partido
+  steps:
+  - intent: resumo_partido
+  - action: action_mostra_resumo_partido
 

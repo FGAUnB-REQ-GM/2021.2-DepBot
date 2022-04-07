@@ -18,6 +18,8 @@ intents:
 - request_partido_politico
 - request_lista_partidos
 - request_membros_partidos
+- resumo_deputado
+- resumo_partido
 slots:
   name:
     type: text
@@ -51,7 +53,7 @@ responses:
   utter_ask_sobrenome:
   - text: Ótimo, agora me informe o sobrenome 
   utter_submit:
-  - text: Entendi, estou preparando os dados
+  - text: Entendi, estou preparando os dados...
   utter_slots_values:
   - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
   utter_slots_values_partido_politico:
@@ -82,6 +84,8 @@ actions:
 - action_mostraSituacao
 - action_mostraListaPartidos
 - action_mostraMembrosPartido
+- action_mostra_resumo
+- action_mostra_resumo_partido
 forms:
   name_form:
     name:
