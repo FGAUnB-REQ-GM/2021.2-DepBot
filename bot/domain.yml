@@ -18,6 +18,7 @@ intents:
 - request_partido_politico
 - request_lista_partidos
 - request_membros_partidos
+- resumo_deputado
 slots:
   name:
     type: text
@@ -82,6 +83,7 @@ actions:
 - action_mostraSituacao
 - action_mostraListaPartidos
 - action_mostraMembrosPartido
+- action_mostra_resumo
 forms:
   name_form:
     name:
