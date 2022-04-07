@@ -131,3 +131,13 @@ nlu:
     - Quero saber o resumo
     - Informações gerais
     - Informações
+
+- intent: resumo_partido
+  examples: |
+    - Resumo do partido
+    - Me mostre o resumo de um partido político
+    - Resumo partido político
+    - Quero saber o resumo do partido político
+    - Informações gerais
+    - Informações partido político
+

@@ -19,6 +19,7 @@ intents:
 - request_lista_partidos
 - request_membros_partidos
 - resumo_deputado
+- resumo_partido
 slots:
   name:
     type: text
@@ -84,6 +85,7 @@ actions:
 - action_mostraListaPartidos
 - action_mostraMembrosPartido
 - action_mostra_resumo
+- action_mostra_resumo_partido
 forms:
   name_form:
     name:

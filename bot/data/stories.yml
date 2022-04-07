@@ -112,3 +112,8 @@ stories:
   - intent: resumo_deputado
   - action: action_mostra_resumo 
 
+- story: mostra resumo do partido
+  steps:
+  - intent: resumo_partido
+  - action: action_mostra_resumo_partido
+
