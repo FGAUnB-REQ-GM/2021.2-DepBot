@@ -1,6 +1,0 @@
-- Documentos
-  - [Visão](visao/visao(U3).md)
-  - [Canvas](canvas/canvas(U3).md)
-  - [Product BackLog Building (PBB Canvas)](canvas/PBBcanvas(U3).md)
-  - [User Stories MVP e Critérios de Aceitação](userStories/userStories(U3).md)
-  - [Behavior Driven Development (BDD)](userStories/BDD(U3).md)
