@@ -102,6 +102,7 @@ class MostraReumoDeputado(Action):
             
             nomeCivil = request["dados"]["nomeCivil"]
             nomeEleitoral = request["dados"]["ultimoStatus"]["nomeEleitoral"]
+            email = request["dados"]["ultimoStatus"]["email"]
             sexo = request["dados"]["sexo"]
             sexoT = ''
             if(sexo == 'F'):
@@ -113,7 +114,7 @@ class MostraReumoDeputado(Action):
             municipioNascimento = request["dados"]["municipioNascimento"]
             
             texto1 = 'Segue abaixo os dados que consegui sobre ' + nomeCivil
-            texto2 = '- Nome Civil: ' + nomeCivil + '\n' + '- Nome Eleitoral: ' + nomeEleitoral + '\n' + '- Sexo: ' + sexoT + '\n' + '- Escolaridade: ' + esolaridade + '\n' +  '- UF Nascimento: ' + ufNascimento + '\n' + '- Município Nascimento: ' + municipioNascimento
+            texto2 = '- Nome Civil: ' + nomeCivil + '\n' + '- Nome Eleitoral: ' + nomeEleitoral + '\n' + '- Email: ' + email + '\n' '- Sexo: ' + sexoT + '\n' + '- Escolaridade: ' + esolaridade + '\n' +  '- UF Nascimento: ' + ufNascimento + '\n' + '- Município Nascimento: ' + municipioNascimento
             dispatcher.utter_message(text=texto1)
             dispatcher.utter_message(text=texto2)
             return [SlotSet("name", None) , SlotSet("sobrenome" , None)]
