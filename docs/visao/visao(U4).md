@@ -112,6 +112,8 @@ Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolv
 
 Para a abordagem de Engenharia de Requisitos também utilizamos como base o Cascata. O modelo possui todas as atividades presentes na engenharia de requisitos, seguindo uma linearidade quanto a ordem de execução das etapas. 
 
+<span style="color:red">SERÁ MESMO QUE VCS ESTÃO USANDO UMA ABORDAGEM CASCATA?</span>
+
 Segue imagem com os processos abaixo:
 
 <p align="center">
@@ -134,6 +136,9 @@ Segue imagem com os processos abaixo:
 |Resolução de conflitos|Brainstorming|Serviço de comunicação remota|
 
 ### 3.3 Documentação de Requisitos
+
+<span style="color:red">BACKLOG, SAFe, HISTÓRIAS, nada disso é citado.</span>
+
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
 |Documentar requisitos de usuário|Linguagem natural|Software de edição de texto|
@@ -142,6 +147,8 @@ Segue imagem com os processos abaixo:
 |Documentar possíveis alterações nos requisitos|Linguagem natural|Software de edição de texto|
 
 ### 3.4 Verificação de Requisitos
+
+<span style="color:red">EM QUE MOMENTOS VCS ESTÃO FAZENDO OU FIZERAM ISSO?</span>
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
@@ -152,6 +159,8 @@ Segue imagem com os processos abaixo:
 |Verificabilidade|Geração de casos de teste|Telegram|
 
 ### 3.5 Gerenciamento de Requisitos
+
+<span style="color:red">ONDE ESTÁ A MATRIZ DE RASTREABILIDADE, CITADA?</span>
 
 |Atividade|Método|Ferramenta|
 |:--------|:-----|:---------|
@@ -183,6 +192,9 @@ Segue tabela com os papéis da equipe:
 | Fase 2 |Projeto de Sistema e Software| 18/03/2022 | 07/04/2022 |
 | Fase 3 |Integração e teste de sistema | 08/04/2022 | 28/04/2022 |
 | Fase 4 |Operação e manutenção| 29/04/2022 | 13/05/2022 |
+
+<span style="color:red">A FASE 5 SERÁ PÓS-DISCIPLINA?</span>
+
 ### 4.3	Matriz de Comunicação
 
 |Descrição|Área/Envolvidos|Periodicidade|Produtos Gerados|
