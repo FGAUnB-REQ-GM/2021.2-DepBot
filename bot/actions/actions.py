@@ -99,27 +99,51 @@ class MostraReumoDeputado(Action):
         if(idDeputado != None):
             idDeputadoStr = str(idDeputado)
             request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%idDeputadoStr).json()
-            
-            nomeCivil = request["dados"]["nomeCivil"]
-            nomeEleitoral = request["dados"]["ultimoStatus"]["nomeEleitoral"]
-            email = request["dados"]["ultimoStatus"]["email"]
-            sexo = request["dados"]["sexo"]
+            nomeCivil = 'Desconhecido'
+            nomeEleitoral = 'Desconhecido'
+            email = 'Desconhecido'
+            partido = 'Desconhecido'
             sexoT = ''
-            if(sexo == 'F'):
-                sexoT = 'Feminino'
-            else:
-                sexoT = 'Masculino'
-            esolaridade = request["dados"]["escolaridade"]
-            ufNascimento = request["dados"]["ufNascimento"]
-            municipioNascimento = request["dados"]["municipioNascimento"]
+            esolaridade = 'Desconhecido'
+            municipioNascimento = 'Desconhecido'
+
+            if request["dados"]["nomeCivil"] is not None:
+                nomeCivil = request["dados"]["nomeCivil"]
+            
+            if request["dados"]["ultimoStatus"]["nomeEleitoral"] is not None:
+                nomeEleitoral = request["dados"]["ultimoStatus"]["nomeEleitoral"]
+
+            if request["dados"]["sexo"] is not None:
+                sexo = request["dados"]["sexo"]
+                if(sexo == 'F'):
+                    sexoT = 'Feminino'
+                else:
+                    sexoT = 'Masculino'
+
+
+            if request["dados"]["ultimoStatus"]["siglaPartido"] is not None:
+                partido = request["dados"]["ultimoStatus"]["siglaPartido"]
+
+            if request["dados"]["ultimoStatus"]["email"] is not None:
+                #email = 'Teste'
+                email = request["dados"]["ultimoStatus"]["email"]
+            
+            if request["dados"]["escolaridade"] is not None:
+                esolaridade = request["dados"]["escolaridade"]
+
+            if request["dados"]["ufNascimento"] is not None:
+                ufNascimento = request["dados"]["ufNascimento"]
+
+            if request["dados"]["municipioNascimento"] is not None:
+                municipioNascimento = request["dados"]["municipioNascimento"]
             
             texto1 = 'Segue abaixo os dados que consegui sobre ' + nomeCivil
-            texto2 = '- Nome Civil: ' + nomeCivil + '\n' + '- Nome Eleitoral: ' + nomeEleitoral + '\n' + '- Email: ' + email + '\n' '- Sexo: ' + sexoT + '\n' + '- Escolaridade: ' + esolaridade + '\n' +  '- UF Nascimento: ' + ufNascimento + '\n' + '- Município Nascimento: ' + municipioNascimento
+            texto2 = '- Nome Civil: ' + nomeCivil + '\n' + '- Nome Eleitoral: ' + nomeEleitoral + '\n' + '- Email: ' + email + '\n'+ '- Partido: ' + partido + '\n' + '- Sexo: ' + sexoT + '\n' + '- Escolaridade: ' + esolaridade + '\n' +  '- UF Nascimento: ' + ufNascimento + '\n' + '- Município Nascimento: ' + municipioNascimento
             dispatcher.utter_message(text=texto1)
             dispatcher.utter_message(text=texto2)
             return [SlotSet("name", None) , SlotSet("sobrenome" , None)]
         else:
-            textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
+            textoErro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outro nome de deputado."
             dispatcher.utter_message(text=textoErro)
             return [Restarted()]
         return []
@@ -141,17 +165,18 @@ class MostraResumoPartido(Action):
             siglaPartido = request["dados"]["sigla"]
             situacaoPartido = request["dados"]["status"]["situacao"]
             totalMembrosPartido = request["dados"]["status"]["totalMembros"]
-            nomeLider = request["dados"]["status"]["lider"]["nome"]
+            #nomeLider = request["dados"]["status"]["lider"]["nome"]
+            #imagemPartido = request["dados"]["urlLogo"]
 
             texto1 = "Segue abaixo o resumo dos dados do partido..."
-            texto2 = "- Nome: " + nomePartido + "\n" + "- Sigla: " + siglaPartido + "\n" + "- Situação: " + situacaoPartido + "\n" + "- Número de membros: " + totalMembrosPartido + "\n" + "- Nome do Líder: " + nomeLider 
+            texto2 = "- Nome: " + nomePartido + "\n" + "- Sigla: " + siglaPartido + "\n" + "- Situação: " + situacaoPartido + "\n" + "- Número de membros: " + totalMembrosPartido
             dispatcher.utter_message(text=texto1)
             dispatcher.utter_message(text=texto2)
 
             return [SlotSet("partidoPolitico", None)]
 
         else:
-            textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
+            textoErro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outra sigla de partido."
             dispatcher.utter_message(text=textoErro)
             return [Restarted()]
         return []

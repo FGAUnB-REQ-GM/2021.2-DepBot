@@ -49,7 +49,7 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_ask_name:
-  - text: Para eu conseguir os dados, me informe o primeiro  nome do Deputado que deseja consultar.2
+  - text: Para eu conseguir os dados, me informe o primeiro  nome do Deputado que deseja consultar.
   utter_ask_sobrenome:
   - text: Ótimo, agora me informe o sobrenome 
   utter_submit:
@@ -60,17 +60,16 @@ responses:
   - text: Encontrei dados sobre o partido! O que gostaria de ver sobre ele(a) ?
   utter_request_dia_eleicao:
   - text: |
-      Estou muito contente com sua curiosidade sobre as eleições, já que é um momento muito importante para todos definir do que será daqui pra frente =)
-      As eleições para presidente da República, gorvenadores, senadores e deputados federais, estaduais e distritais está prevista para ocorrer no dia 02 de Outubro.
+      Estou muito contente com sua curiosidade sobre as eleições, já que é um momento muito importante para todos definir do que será daqui pra frente 🥳 
+      As eleições para presidente da República, governadores, senadores e deputados federais, estaduais e distritais está prevista para ocorrer no dia 02 de Outubro.
       Anote aí viu !!!
-      Mas sempre que tiver alguma dúvida relacionada às eleições podem procurar a mim =)
+      Mas sempre que tiver alguma dúvida relacionada às eleições podem procurar a mim 😃
   utter_request_partido_politico:
   - text: |
-      Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro, ou se não souber agora eu posso mostrar uma lista de partidos dispoíveis se quiser.
-      Bsta digitar "Lista Partidos" que posso trazer uma lista para você =).
+      Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro. Assim que digitado irei realizar a pesquisa.
   utter_mostra_func:
   - text : |
-      Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados      sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
+      Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
 
 actions:
 - utter_greet
