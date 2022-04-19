@@ -78,7 +78,6 @@ actions:
 - utter_submit
 - action_hello_world2
 - action_setIdDeputado
-- action_mostraPartidoDeputado
 - action_mostraDados
 - action_mostraSituacao
 - action_mostraListaPartidos

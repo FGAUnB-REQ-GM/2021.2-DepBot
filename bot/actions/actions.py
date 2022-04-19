@@ -96,7 +96,7 @@ class MostraReumoDeputado(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         idDeputado = tracker.get_slot("idDep")
-        if(idDeputado != None):
+        if(idDeputado is not None):
             idDeputadoStr = str(idDeputado)
             request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%idDeputadoStr).json()
             nomeCivil = 'Desconhecido'
@@ -157,7 +157,7 @@ class MostraResumoPartido(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         idPartido = tracker.get_slot("idPartidoPolitico")
-        if(idPartido != None):
+        if(idPartido is not None):
             idPartidoStr = str(idPartido)
 
             request = requests.get('https://dadosabertos.camara.leg.br/api/v2/partidos/%s'%idPartidoStr).json()
@@ -180,31 +180,6 @@ class MostraResumoPartido(Action):
             dispatcher.utter_message(text=textoErro)
             return [Restarted()]
         return []
-
-
-
-
-class MostraPartidoDeputado(Action):
-    def name(self) -> Text:
-        return "action_mostraPartidoDeputado"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        idDeputado = tracker.get_slot("idDep")
-        if(idDeputado != None):
-            idDeputadoStr = str(idDeputado)
-            request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%idDeputadoStr).json()
-            partido = request["dados"]["ultimoStatus"]["siglaPartido"]
-            texto = "O partido é " + partido + "!"
-            dispatcher.utter_message(text=texto)
-            return [SlotSet("name", None) , SlotSet("sobrenome" , None)]
-
-        else:
-            textoErro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
-            dispatcher.utter_message(text=textoErro)
-            return [Restarted()]
-        return[]
 
 
 
