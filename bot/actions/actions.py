@@ -270,3 +270,34 @@ class MostraMembrosPartido(Action):
             dispatcher.utter_message(text=textoErro)
             return [Restarted()]
         return []
+
+class MostraListaDeputadosPorPartido(Action):
+    def name(self) -> Text:
+        return "action_MostraListaDeputadosPorPartido"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        sigla = tracker.get_slot("partidoPolitico")
+        request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados?siglaUf=&siglaPartido=%s&itens=50&ordem=ASC&ordenarPor=nome'%sigla).json()
+        texto = ""
+        texto2 = ""
+        if not request["dados"]:
+            texto = "Desculpa, não consegui encontrar os deputados desse partido, digite outro ou digite 'Lista Partidos' para ver quais partidos estão disponíveis =)."
+            dispatcher.utter_message(text = texto)
+            return [SlotSet("partidoPolitico", None)]
+        else:
+            lista_deputados = request["dados"]
+            lista_array_deputados = []
+
+            for item in lista_deputados:
+                lista_array_deputados.append(item["nome"] + "\n")
+        
+            texto = "Segue abaixo uma lista de deputados disponíveis para a consulta do partido " + sigla
+            texto2 = "".join(lista_array_deputados)
+
+            dispatcher.utter_message(text = texto)
+            dispatcher.utter_message(text = texto2)
+
+            return [SlotSet("partidoPolitico", None)]
+

@@ -79,6 +79,26 @@ stories:
     #- action: utter_slots_values_partido_politico
   - action: action_mostra_resumo_partido
 
+- story: story_mostra_lista_deputados_por_partido
+
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_mostra_func
+  - intent: ask_lista_deputados
+  - action: utter_ask_lista_deputados
+  - action: partido_form2
+  - active_loop: partido_form2
+  - slot_was_set:
+    - requested_slot: partidoPolitico
+  - slot_was_set:
+    - partidoPolitico: pt
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: action_MostraListaDeputadosPorPartido
+ 
 - story: informa o email do deputado
   steps:
   - intent: request_email

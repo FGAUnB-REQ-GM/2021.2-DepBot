@@ -20,6 +20,8 @@ intents:
 - request_membros_partidos
 - resumo_deputado
 - resumo_partido
+- ask_lista_deputados
+
 slots:
   name:
     type: text
@@ -70,6 +72,8 @@ responses:
   utter_mostra_func:
   - text : |
       Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
+  utter_ask_lista_deputados:
+  - text: Para fornecer a listagem, por favor digite a sigla de um partido para que eu possa realizar uma filtragem e mostrar os dados.
 
 actions:
 - utter_greet
@@ -84,6 +88,8 @@ actions:
 - action_mostraMembrosPartido
 - action_mostra_resumo
 - action_mostra_resumo_partido
+- action_MostraListaDeputadosPorPartido
+
 forms:
   name_form:
     name:
@@ -93,6 +99,8 @@ forms:
   partido_form:
     partidoPolitico:
     - type: from_text
-
+  partido_form2:
+    partidoPolitico:
+    - type: from_text
 
 

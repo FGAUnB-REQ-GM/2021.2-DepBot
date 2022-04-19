@@ -140,4 +140,10 @@ nlu:
     - Quero saber o resumo do partido político
     - Informações gerais
     - Informações partido político
-
+- intent: ask_lista_deputados
+  examples: |
+    - Quero saber a lista de deptuados
+    - Lista de deputados
+    - Me mostre a lista de deputados
+    - Ver lista de deputados
+ 
