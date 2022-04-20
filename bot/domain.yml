@@ -12,9 +12,7 @@ intents:
 - mood_unhappy
 - bot_challenge
 - request_partido_deputado
-- request_email
 - request_dia_eleicao
-- request_situacao
 - request_partido_politico
 - request_lista_partidos
 - request_membros_partidos
