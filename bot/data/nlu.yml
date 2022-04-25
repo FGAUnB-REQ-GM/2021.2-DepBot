@@ -1,0 +1,130 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - oi
+    - eae
+    - iai
+    - fala ae
+    - ola
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+- intent: goodbye
+  examples: |
+    - tchau
+    - até mais
+    - falou
+    - flw
+    - até a próxima
+    - adeus
+    - só isso mesmo
+    - obrigado
+- intent: affirm
+  examples: |
+    - sim
+    - ss
+    - exato
+    - claro
+    - exatamente
+    - isso mesmo
+    - correto
+- intent: deny
+  examples: |
+    - nao
+    - n
+    - nunca
+    - errado
+    - incorreto
+    - está errado
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: request_names
+  examples: |
+    - Informações sobre um deputado
+    - Deputado
+    - Me fale sobre um deputado
+    - Quero saber sobre um deputado
+- intent: request_dia_eleicao
+  examples: |
+    - Quando será o dia das eleições ?
+    - Dia eleições
+    - Eleições dia
+    - Me informe o dia das eleições
+- intent: request_partido_politico
+  examples: |
+    - Quero saber sobre um partido político
+    - Partido político
+    - Me fale sobre um partido específico
+    - Informações sobre um partido político
+- intent: request_lista_partidos
+  examples: |
+    - Quero saber a lista de partidos
+    - Lista
+    - Me mostre a lista de partidos
+- intent: request_membros_partidos
+  examples: |
+    - Quantos membros possui ?
+    - Quantidade Membros
+    - Membros
+    - Me mostre o número de membros
+- intent: resumo_deputado
+  examples: |
+    - Resumo do deputado
+    - Me mostre o resumo do deputado
+    - Resumo
+    - Quero saber o resumo
+    - Informações gerais
+    - Informações
+
+- intent: resumo_partido
+  examples: |
+    - Resumo do partido
+    - Me mostre o resumo de um partido político
+    - Resumo partido político
+    - Quero saber o resumo do partido político
+    - Informações gerais
+    - Informações partido político
+- intent: ask_lista_deputados
+  examples: |
+    - Quero saber a lista de deptuados
+    - Lista de deputados
+    - Me mostre a lista de deputados
+    - Ver lista de deputados
+ 
