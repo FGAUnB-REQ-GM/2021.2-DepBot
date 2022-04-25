@@ -81,25 +81,6 @@ nlu:
     - Deputado
     - Me fale sobre um deputado
     - Quero saber sobre um deputado
-- intent: request_partido_deputado
-  examples: |
-    - Quero saber o partido
-    - partido
-    - Qual o partido ?
-    - Me fala o partido
-- intent: request_email
-  examples: |
-    - Quero saber o email
-    - email
-    - Qual o email ?
-    - Me fala o email
-- intent: request_situacao
-  examples: |
-    - Quero saber a situação
-    - situação
-    - Qual a situação ?
-    - Me fala a situação
-    - Está em exercício ?
 - intent: request_dia_eleicao
   examples: |
     - Quando será o dia das eleições ?
@@ -140,4 +121,10 @@ nlu:
     - Quero saber o resumo do partido político
     - Informações gerais
     - Informações partido político
-
+- intent: ask_lista_deputados
+  examples: |
+    - Quero saber a lista de deptuados
+    - Lista de deputados
+    - Me mostre a lista de deputados
+    - Ver lista de deputados
+ 

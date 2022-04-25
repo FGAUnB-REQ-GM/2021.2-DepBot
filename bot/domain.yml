@@ -12,14 +12,14 @@ intents:
 - mood_unhappy
 - bot_challenge
 - request_partido_deputado
-- request_email
 - request_dia_eleicao
-- request_situacao
 - request_partido_politico
 - request_lista_partidos
 - request_membros_partidos
 - resumo_deputado
 - resumo_partido
+- ask_lista_deputados
+
 slots:
   name:
     type: text
@@ -38,7 +38,7 @@ responses:
   utter_greet:
   - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. =)
   utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
+  - text: 'Here is someth2ing to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
   - text: Did that help you?
@@ -70,6 +70,8 @@ responses:
   utter_mostra_func:
   - text : |
       Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
+  utter_ask_lista_deputados:
+  - text: Para fornecer a listagem, por favor digite a sigla de um partido para que eu possa realizar uma filtragem e mostrar os dados.
 
 actions:
 - utter_greet
@@ -84,6 +86,8 @@ actions:
 - action_mostraMembrosPartido
 - action_mostra_resumo
 - action_mostra_resumo_partido
+- action_MostraListaDeputadosPorPartido
+
 forms:
   name_form:
     name:
@@ -93,6 +97,8 @@ forms:
   partido_form:
     partidoPolitico:
     - type: from_text
-
+  partido_form2:
+    partidoPolitico:
+    - type: from_text
 
 

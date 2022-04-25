@@ -51,3 +51,22 @@ rules:
     #- action: utter_slots_values_partido_politico
   - action: action_mostra_resumo_partido
 
+- rule: Activate form listagem deputados por partido
+  steps:
+  - intent: ask_lista_deputados
+  - action: utter_ask_lista_deputados
+  - action: partido_form2
+  - active_loop: partido_form2
+
+- rule: Submit form listagem deputados por partido
+  condition:
+  - active_loop: partido_form2
+  steps:
+  - action: partido_form2
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_submit
+  - action: action_MostraListaDeputadosPorPartido
+
+
