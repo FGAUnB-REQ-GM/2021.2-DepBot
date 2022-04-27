@@ -80,13 +80,7 @@ nlu:
     - Informações sobre um deputado
     - Deputado
     - Me fale sobre um deputado
-    - Quero saber sobre um deputado
-- intent: request_dia_eleicao
-  examples: |
-    - Quando será o dia das eleições ?
-    - Dia eleições
-    - Eleições dia
-    - Me informe o dia das eleições
+    - Quero saber sobre um deputad
 - intent: request_partido_politico
   examples: |
     - Quero saber sobre um partido político
@@ -127,4 +121,37 @@ nlu:
     - Lista de deputados
     - Me mostre a lista de deputados
     - Ver lista de deputados
- 
+- intent: request_informacoes_camara
+  examples: |
+    - Quero saber sobre a Câmara dos Deputados
+    - Informações sobre a Câmara dos Deputados
+    - Câmara dos Deputados
+    - Câmara
+    - O que posso saber sobre a Câmara dos Deputados
+- intent: request_informacoes_eleicoes
+  examples: |
+    - Quero saber sobre as eleições
+    - Informações sobre as Eleições
+    - Eleições
+    - O que posso saber sobre as eleições ?
+- intent: request_dia_eleicoes
+  examples: |
+    - Quero saber sobre o dia das as eleições
+    - Dias das eleições
+    - Data Eleições
+    - Quando serão as Eleições ?
+- intent: out_of_scope
+  examples: |
+    - Quero saber sobre uma melancia
+    - Como se faz um carro
+    - Que horas são ?
+    - Você sabe fazer café ?
+    - Quero comprar uma pizza
+    - Como esttá minha encomenda ?
+    - De todos os problemas do mundo, qual você gostaria de ver resolvido primeiro?
+    - Você pode descrever seu estilo pessoal ?
+    - Doideira
+    - TO com sono
+    - Qual seu lugar favorito ?
+    - Qual avanço tecnológico você espera no futuro?
+    - Qual parte da história você acha mais interessante? 

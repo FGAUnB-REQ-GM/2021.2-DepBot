@@ -98,11 +98,6 @@ stories:
   - active_loop: null
   - action: utter_submit
   - action: action_MostraListaDeputadosPorPartido
-
-- story: informa o dia das eleições
-  steps:
-  - intent: request_dia_eleicao
-  - action: utter_request_dia_eleicao
  
 - story: mostra lista de partidos
   steps:
@@ -123,4 +118,19 @@ stories:
   steps:
   - intent: resumo_partido
   - action: action_mostra_resumo_partido
+
+- story: mostra listagem comandos Câmara dos Deputados
+  steps:
+  - intent: request_informacoes_camara
+  - action: utter_request_informacoes_camara 
+
+- story: mostra listagem comandos Eleições
+  steps:
+  - intent: request_informacoes_eleicoes
+  - action: utter_request_informacoes_eleicoes
+
+- story: mostra dia das eleições
+  steps:
+  - intent: request_dia_eleicoes
+  - action: utter_request_dia_eleicoes
 

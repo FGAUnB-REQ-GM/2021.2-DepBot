@@ -12,14 +12,16 @@ intents:
 - mood_unhappy
 - bot_challenge
 - request_partido_deputado
-- request_dia_eleicao
 - request_partido_politico
 - request_lista_partidos
 - request_membros_partidos
 - resumo_deputado
 - resumo_partido
 - ask_lista_deputados
-
+- request_informacoes_camara
+- request_informacoes_eleicoes
+- request_dia_eleicoes
+- out_of_scope
 slots:
   name:
     type: text
@@ -58,12 +60,6 @@ responses:
   - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
   utter_slots_values_partido_politico:
   - text: Encontrei dados sobre o partido! O que gostaria de ver sobre ele(a) ?
-  utter_request_dia_eleicao:
-  - text: |
-      Estou muito contente com sua curiosidade sobre as eleições, já que é um momento muito importante para todos definir do que será daqui pra frente 🥳 
-      As eleições para presidente da República, governadores, senadores e deputados federais, estaduais e distritais está prevista para ocorrer no dia 02 de Outubro.
-      Anote aí viu !!!
-      Mas sempre que tiver alguma dúvida relacionada às eleições podem procurar a mim 😃
   utter_request_partido_politico:
   - text: |
       Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro. Assim que digitado irei realizar a pesquisa.
@@ -72,7 +68,21 @@ responses:
       Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
   utter_ask_lista_deputados:
   - text: Para fornecer a listagem, por favor digite a sigla de um partido para que eu possa realizar uma filtragem e mostrar os dados.
-
+  utter_request_informacoes_camara:
+  - text: |
+      Sobre a Câmara dos Deputados, o que eu consigo te fornecer de informações está bem abaixo =)...
+      (LISTAGEM)
+  utter_request_informacoes_eleicoes:
+  - text: |
+      Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo =)...
+      - Dia das Eleições
+  utter_request_dia_eleicoes:
+  - text: |
+      O 1º turno das eleições será em 02/10/2022, em um Domingo
+      E caso tenha um 2º turno, está previsto para ser em 30/10/2022, também em um Domingo.
+      Vale lembrar que o dia da eleição é considerado feriado, porém os estabelecimentos que possuem autorização para funcionamento em feriados poderão funcionar, devendo proporcionar as condições para que seus funcionários possam exercer o direito/dever do voto.
+  utter_out_of_scope:
+  - text: Desculpa, não compreendi sua mensagem... =(
 actions:
 - utter_greet
 - utter_slots_values

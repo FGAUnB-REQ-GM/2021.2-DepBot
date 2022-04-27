@@ -156,12 +156,21 @@ class MostraResumoPartido(Action):
         id_partido = tracker.get_slot("idPartidoPolitico")
         if(id_partido is not None):
             id_partido_str = str(id_partido)
-
+            nome_partido = 'Desconhecido'
+            sigla_partido = 'Desconhecido'
+            situacao_partido = 'Desconhecido'
+            total_membros_partido = 'Desconhecido'
+            
             request = requests.get('https://dadosabertos.camara.leg.br/api/v2/partidos/%s'%id_partido_str).json()
-            nome_partido = request["dados"]["nome"] 
-            sigla_partido = request["dados"]["sigla"]
-            situacao_partido = request["dados"]["status"]["situacao"]
-            total_membros_partido = request["dados"]["status"]["totalMembros"]
+            
+            if request["dados"]["nome"] is not None:
+                nome_partido = request["dados"]["nome"]
+            if request["dados"]["sigla"] is not None:
+                sigla_partido = request["dados"]["sigla"]
+            if request["dados"]["status"]["situacao"] is not None:
+                situacao_partido = request["dados"]["status"]["situacao"]
+            if request["dados"]["status"]["totalMembros"] is not None:
+                total_membros_partido = request["dados"]["status"]["totalMembros"]
 
             texto1 = "Segue abaixo o resumo dos dados do partido..."
             texto2 = "- Nome: " + nome_partido + "\n" + "- Sigla: " + sigla_partido + "\n" + "- Situação: " + situacao_partido + "\n" + "- Número de membros: " + total_membros_partido
