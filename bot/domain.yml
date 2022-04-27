@@ -14,7 +14,6 @@ intents:
   - ask_lista_deputados
   - request_informacoes_camara
   - request_informacoes_eleicoes
-  - request_dia_eleicoes
   - out_of_scope
 slots:
   name:
@@ -69,12 +68,36 @@ responses:
   utter_request_informacoes_eleicoes:
     - text: |
         Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo =)...
-        - Dia das Eleições
   utter_request_dia_eleicoes:
     - text: |
         O 1º turno das eleições será em 02/10/2022, em um Domingo
         E caso tenha um 2º turno, está previsto para ser em 30/10/2022, também em um Domingo.
         Vale lembrar que o dia da eleição é considerado feriado, porém os estabelecimentos que possuem autorização para funcionamento em feriados poderão funcionar, devendo proporcionar as condições para que seus funcionários possam exercer o direito/dever do voto.
+  utter_request_calendario_eleicoes:
+    - text: |
+        Gostaria de mais detalhes sobre toda a programação e datas importantes das eleições? Segue o link para o site 👍.
+        - https://www.tse.jus.br/eleicoes/calendario-eleitoral/calendario-eleitoral
+  utter_request_tirar_titulo:
+    - text: |
+        Para tirar seu título de eleitor, primeiramente é necessário digitalizar os documentos que vou te falar:
+
+        - Documento oficial de identidade com foto (frente e verso).
+        - Comprovante de residência recente (no caso de transferência, prazo mínimo de três meses de residência no novo endereço).
+        - Comprovante de pagamento de débito com a Justiça Eleitoral (quando houver débito).
+        - Comprovante de quitação do serviço militar, para o alistamento, sendo o requerente do sexo masculino (para homens com 19 anos que ainda não tenham título eleitoral)
+
+        Feito isso, acesse a página do Título Net (https://www.tse.jus.br/eleitor/titulo-de-eleitor/pre-atendimento-eleitoral-titulo-net/pre-atendimento-eleitoral-titulo-net/) e clique no link iniciar seu atendimento a distancia =).
+        Fica a dica: também é possível regularizar e alterar seus dados do titulo nesse mesmo site.
+  utter_request_e_titulo:
+    - text: |
+        Gostaria de acessar e fazer operações relacionadas ao seu título de eleitor facilmente e pertinho de você? Lhe apresento o e-Título =) .
+        O e-Título é um aplicativo da Justiça Eleitoral, de iniciativa do Tribunal Regional Eleitoral do Acre e lançado pelo Tribunal Superior Eleitoral em dezembro de 2017, que permite ao eleitor acessar, com seu smartphone ou tablet, uma via digital do seu título de eleitor e outras informações, como o seu local de votação, débitos e certidões eleitorais.
+        Além disso, outros serviços foram incorporados ao e-Título,tais como a justificativa eleitoral, a emissão de guais de multa relacionadas à ausência às eleições e aos trabalhos de mesário,assim como a opção para se inscrever como mesário voluntário.
+        O e-Título está disponível para download tanto na App Store quanto Play Store.
+  utter_request_local_votacao:
+    - text: |
+        Está afim de consultar seu local de votação? Isso pode ser feito por meio do nome do eleitor ou do número do título eleitoral. Aqui está o link para o site: 
+        - https://www.tse.jus.br/eleitor/titulo-e-local-de-votacao/consulta-por-nome
   utter_out_of_scope:
     - text: Desculpa, não compreendi sua mensagem... =(
 actions:

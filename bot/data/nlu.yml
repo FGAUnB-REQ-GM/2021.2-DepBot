@@ -95,12 +95,6 @@ nlu:
       - Informações sobre as Eleições
       - Eleições
       - O que posso saber sobre as eleições ?
-  - intent: request_dia_eleicoes
-    examples: |
-      - Quero saber sobre o dia das as eleições
-      - Dias das eleições
-      - Data Eleições
-      - Quando serão as Eleições ?
   - intent: out_of_scope
     examples: |
       - Quero saber sobre uma melancia

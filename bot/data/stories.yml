@@ -105,7 +105,8 @@ stories:
       - intent: request_informacoes_eleicoes
       - action: utter_request_informacoes_eleicoes
 
-  - story: mostra dia das eleições
-    steps:
-      - intent: request_dia_eleicoes
       - action: utter_request_dia_eleicoes
+      - action: utter_request_calendario_eleicoes:
+      - action: utter_request_tirar_titulo
+      - action: utter_request_e_titulo:
+      - action: utter_request_local_votacao
