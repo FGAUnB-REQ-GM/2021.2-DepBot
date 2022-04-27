@@ -1,136 +1,110 @@
 version: "2.0"
 
 stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_mostra_func
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_mostra_func
-  - intent: mood_great
-  - action: utter_happy
+  - story: interactive_story_1
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_mostra_func 
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_mostra_func
+      - intent: request_names
+      - action: name_form
+      - active_loop: name_form
+      - slot_was_set:
+          - requested_slot: name
+      - slot_was_set:
+          - name: vincent
+      - slot_was_set:
+          - requested_slot: sobrenome
+      - slot_was_set:
+          - sobrenome: vieira
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: utter_submit
+      - action: action_hello_world2
+        # - action: utter_slots_values
+      - action: action_mostra_resumo
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_mostra_func
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: interactive_story_1_partido_politico
 
-- story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_mostra_func
+      - intent: request_partido_politico
+      - action: utter_request_partido_politico
+      - action: partido_form
+      - active_loop: partido_form
+      - slot_was_set:
+          - requested_slot: partidoPolitico
+      - slot_was_set:
+          - partidoPolitico: pt
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: utter_submit
+      - action: action_setIdDeputado
+        #- action: utter_slots_values_partido_politico
+      - action: action_mostra_resumo_partido
 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_mostra_func
-  - intent: request_names
-  - action: name_form
-  - active_loop: name_form
-  - slot_was_set:
-    - requested_slot: name
-  - slot_was_set:
-    - name: vincent
-  - slot_was_set:
-    - requested_slot: sobrenome
-  - slot_was_set:
-    - sobrenome: vieira
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_submit
-  - action: action_hello_world2
-    # - action: utter_slots_values
-  - action: action_mostra_resumo
+  - story: story_mostra_lista_deputados_por_partido
 
-- story: interactive_story_1_partido_politico
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_mostra_func
+      - intent: ask_lista_deputados
+      - action: utter_ask_lista_deputados
+      - action: partido_form2
+      - active_loop: partido_form2
+      - slot_was_set:
+          - requested_slot: partidoPolitico
+      - slot_was_set:
+          - partidoPolitico: pt
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: utter_submit
+      - action: action_MostraListaDeputadosPorPartido
 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_mostra_func
-  - intent: request_partido_politico
-  - action: utter_request_partido_politico
-  - action: partido_form
-  - active_loop: partido_form
-  - slot_was_set:
-    - requested_slot: partidoPolitico
-  - slot_was_set:
-    - partidoPolitico: pt
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_submit
-  - action: action_setIdDeputado
-    #- action: utter_slots_values_partido_politico
-  - action: action_mostra_resumo_partido
+  - story: mostra lista de partidos
+    steps:
+      - intent: request_lista_partidos
+      - action: action_mostraListaPartidos
 
-- story: story_mostra_lista_deputados_por_partido
+  - story: mostra Membros de partidos
+    steps:
+      - intent: request_membros_partidos
+      - action: action_mostraMembrosPartido
 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_mostra_func
-  - intent: ask_lista_deputados
-  - action: utter_ask_lista_deputados
-  - action: partido_form2
-  - active_loop: partido_form2
-  - slot_was_set:
-    - requested_slot: partidoPolitico
-  - slot_was_set:
-    - partidoPolitico: pt
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_submit
-  - action: action_MostraListaDeputadosPorPartido
- 
-- story: mostra lista de partidos
-  steps:
-  - intent: request_lista_partidos
-  - action: action_mostraListaPartidos
+  - story: mostra resumo do deputado
+    steps:
+      - intent: resumo_deputado
+      - action: action_mostra_resumo
 
-- story: mostra Membros de partidos
-  steps:
-  - intent: request_membros_partidos
-  - action: action_mostraMembrosPartido
+  - story: mostra resumo do partido
+    steps:
+      - intent: resumo_partido
+      - action: action_mostra_resumo_partido
 
-- story: mostra resumo do deputado
-  steps:
-  - intent: resumo_deputado
-  - action: action_mostra_resumo 
+  - story: mostra listagem comandos Câmara dos Deputados
+    steps:
+      - intent: request_informacoes_camara
+      - action: utter_request_informacoes_camara
 
-- story: mostra resumo do partido
-  steps:
-  - intent: resumo_partido
-  - action: action_mostra_resumo_partido
+  - story: mostra listagem comandos Eleições
+    steps:
+      - intent: request_informacoes_eleicoes
+      - action: utter_request_informacoes_eleicoes
 
-- story: mostra listagem comandos Câmara dos Deputados
-  steps:
-  - intent: request_informacoes_camara
-  - action: utter_request_informacoes_camara 
-
-- story: mostra listagem comandos Eleições
-  steps:
-  - intent: request_informacoes_eleicoes
-  - action: utter_request_informacoes_eleicoes
-
-- story: mostra dia das eleições
-  steps:
-  - intent: request_dia_eleicoes
-  - action: utter_request_dia_eleicoes
-
+  - story: mostra dia das eleições
+    steps:
+      - intent: request_dia_eleicoes
+      - action: utter_request_dia_eleicoes
