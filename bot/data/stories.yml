@@ -98,6 +98,7 @@ stories:
     steps:
       - intent: request_informacoes_camara
       - action: utter_request_informacoes_camara
+      - action: utter_historia_camara
 
   - story: mostra listagem comandos Eleições
     steps:

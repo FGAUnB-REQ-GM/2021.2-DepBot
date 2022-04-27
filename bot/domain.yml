@@ -60,7 +60,12 @@ responses:
   utter_request_informacoes_camara:
     - text: |
         Sobre a Câmara dos Deputados, o que eu consigo te fornecer de informações está bem abaixo =)...
-        (LISTAGEM)
+  utter_historia_camara:
+    - text: |
+        Um pouco de história...
+        A Câmara foi criada pela Constituição de 1824 e a sessão de abertura da primeira legislatura da Assembleia Geral Legislativa (reunião conjunta da Câmara dos Deputados e do Senado) ocorreu em 6 de maio de 1826.
+        Clicando no link abaixo você terá uma informação mais detalhada sobre a história da Câmara dos Deputados.
+        https://www2.camara.leg.br/a-camara/conheca/historia
   utter_request_informacoes_eleicoes:
     - text: |
         Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo =)...
