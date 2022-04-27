@@ -102,7 +102,6 @@ class MostraReumoDeputado(Action):
         if(id_deputado is not None):
             id_deputado_str = str(id_deputado)
             request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%id_deputado_str).json()
-            request2 = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s/profissoes'%id_deputado_str).json()
 
             nome_civil = 'Desconhecido'
             nome_eleitoral = 'Desconhecido'
@@ -111,7 +110,6 @@ class MostraReumoDeputado(Action):
             sexo_t = ''
             esolaridade = 'Desconhecido'
             municipio_nascimento = 'Desconhecido'
-            profissao = 'Desconhecido'
             foto = 'Desconhecido'
 
             if request["dados"]["nomeCivil"] is not None:
@@ -142,9 +140,6 @@ class MostraReumoDeputado(Action):
             if request["dados"]["municipioNascimento"] is not None:
                 municipio_nascimento = request["dados"]["municipioNascimento"]
 
-            if request2["dados"][0]["titulo"] is not None:
-                profissao = request2["dados"][0]["titulo"]
-
             if request["dados"]["ultimoStatus"]["urlFoto"] is not None:
                 foto = request["dados"]["ultimoStatus"]["urlFoto"]
 
@@ -152,7 +147,7 @@ class MostraReumoDeputado(Action):
             texto2 = '- Nome Civil: ' + nome_civil + '\n' + '- Nome Eleitoral: ' + nome_eleitoral + '\n' + '- Email: ' + email + '\n' + '- Partido: ' + partido + '\n' + \
                 '- Sexo: ' + sexo_t + '\n' + '- Escolaridade: ' + esolaridade + '\n' + '- UF Nascimento: ' + \
                 uf_nascimento + '\n' + '- Município Nascimento: ' + \
-                municipio_nascimento + '\n' + '- Profissões: ' + profissao
+                municipio_nascimento
             texto3 = foto
             dispatcher.utter_message(text=texto1)
             dispatcher.utter_message(text=texto2)
