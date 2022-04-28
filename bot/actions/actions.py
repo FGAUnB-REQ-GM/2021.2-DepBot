@@ -56,7 +56,7 @@ class ActionSetIdPartido(Action):
         request = requests.get(
             'https://dadosabertos.camara.leg.br/api/v2/partidos?sigla=%s&ordem=ASC&ordenarPor=sigla' % nome_partido).json()
         if(len(request["dados"]) == 0):
-            texto_erro = "Infelizmente não consegui encontrar o partido 😔, digite 'partido' e tente outro nome válido 😁."
+            texto_erro = "Infelizmente não consegui encontrar o partido 😔, digite 'partido' e tente outra sigla válida 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         else:
@@ -85,7 +85,7 @@ class MostraDados(Action):
             dispatcher.utter_message(text=texto)
             return [SlotSet("name", None), SlotSet("sobrenome", None)]
         else:
-            texto_erro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente, digite 'deputado' e outro nome de deputado válido 😁."
+            texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []
@@ -155,7 +155,7 @@ class MostraReumoDeputado(Action):
             dispatcher.utter_message(text=texto3)
             return [SlotSet("name", None), SlotSet("sobrenome", None)]
         else:
-            texto_erro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outro nome de deputado 😁."
+            texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []
@@ -291,7 +291,7 @@ class MostraMembrosPartido(Action):
             return [SlotSet("partidoPolitico", None)]
 
         else:
-            texto_erro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outro nome de deputado 😁."
+            texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []

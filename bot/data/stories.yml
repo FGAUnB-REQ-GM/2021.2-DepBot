@@ -106,5 +106,7 @@ stories:
       - action: utter_request_informacoes_eleicoes
 
       - action: utter_request_dia_eleicoes
+      - action: utter_request_funcionamento_eleicoes_p1
+      - action: utter_request_funcionamento_eleicoes_p2
       - action: utter_request_calendario_eleicoes
       - action: utter_request_local_votacao
