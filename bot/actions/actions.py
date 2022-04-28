@@ -28,7 +28,7 @@ class ActionHelloWorld(Action):
         id_deputado = tracker.get_slot("idDep")
         nome_p = nome + " " + sobrenome
 
-        texto_erro = "Infelizmente não consegui encontrar o deputado, tente digitar outro nome =)"
+        texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
         request = requests.get(
             'https://dadosabertos.camara.leg.br/api/v2/deputados?nome=%s&ordem=ASC&ordenarPor=nome' % nome_p).json()
         if(len(request["dados"]) == 0):
@@ -56,7 +56,7 @@ class ActionSetIdPartido(Action):
         request = requests.get(
             'https://dadosabertos.camara.leg.br/api/v2/partidos?sigla=%s&ordem=ASC&ordenarPor=sigla' % nome_partido).json()
         if(len(request["dados"]) == 0):
-            texto_erro = "Infelizmente não consegui encontrar o partido, tente digitar outro nome =)"
+            texto_erro = "Infelizmente não consegui encontrar o partido 😔, digite 'partido' e tente outra sigla válida 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         else:
@@ -85,7 +85,7 @@ class MostraDados(Action):
             dispatcher.utter_message(text=texto)
             return [SlotSet("name", None), SlotSet("sobrenome", None)]
         else:
-            texto_erro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
+            texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []
@@ -101,7 +101,8 @@ class MostraReumoDeputado(Action):
         id_deputado = tracker.get_slot("idDep")
         if(id_deputado is not None):
             id_deputado_str = str(id_deputado)
-            request = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados/%s'%id_deputado_str).json()
+            request = requests.get(
+                'https://dadosabertos.camara.leg.br/api/v2/deputados/%s' % id_deputado_str).json()
 
             nome_civil = 'Desconhecido'
             nome_eleitoral = 'Desconhecido'
@@ -154,7 +155,7 @@ class MostraReumoDeputado(Action):
             dispatcher.utter_message(text=texto3)
             return [SlotSet("name", None), SlotSet("sobrenome", None)]
         else:
-            texto_erro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outro nome de deputado."
+            texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []
@@ -197,7 +198,7 @@ class MostraResumoPartido(Action):
             return [SlotSet("partidoPolitico", None)]
 
         else:
-            texto_erro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outra sigla de partido."
+            texto_erro = "Infelizmente não encontrei os dados 😔 . Por favor tente começar novamente digitando outra sigla de partido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []
@@ -290,7 +291,7 @@ class MostraMembrosPartido(Action):
             return [SlotSet("partidoPolitico", None)]
 
         else:
-            texto_erro = "Infelizmente não encontrei os dados =( . Por favor tente começar novamente digitando outro nome de deputado."
+            texto_erro = "Infelizmente não consegui encontrar o deputado 😔, digite 'deputado' e tente outro nome válido 😁."
             dispatcher.utter_message(text=texto_erro)
             return [Restarted()]
         return []
@@ -309,7 +310,7 @@ class MostraListaDeputadosPorPartido(Action):
         texto = ""
         texto2 = ""
         if not request["dados"]:
-            texto = "Desculpa, não consegui encontrar os deputados desse partido, digite outro ou digite 'Lista Partidos' para ver quais partidos estão disponíveis =)."
+            texto = "Desculpa, não consegui encontrar os deputados desse partido 😔, digite outro ou digite 'Lista Partidos' para ver quais partidos estão disponíveis 😁."
             dispatcher.utter_message(text=texto)
             return [SlotSet("partidoPolitico", None)]
         else:
@@ -326,4 +327,3 @@ class MostraListaDeputadosPorPartido(Action):
             dispatcher.utter_message(text=texto2)
 
             return [SlotSet("partidoPolitico", None)]
-

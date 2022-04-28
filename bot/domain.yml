@@ -14,7 +14,6 @@ intents:
   - ask_lista_deputados
   - request_informacoes_camara
   - request_informacoes_eleicoes
-  - request_dia_eleicoes
   - out_of_scope
 slots:
   name:
@@ -82,13 +81,39 @@ responses:
         Horário de atendimento das 8h às 20h, de segunda a sexta-feira.
   utter_request_informacoes_eleicoes:
     - text: |
-        Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo =)...
-        - Dia das Eleições
+        Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo 😁...
   utter_request_dia_eleicoes:
     - text: |
-        O 1º turno das eleições será em 02/10/2022, em um Domingo
-        E caso tenha um 2º turno, está previsto para ser em 30/10/2022, também em um Domingo.
-        Vale lembrar que o dia da eleição é considerado feriado, porém os estabelecimentos que possuem autorização para funcionamento em feriados poderão funcionar, devendo proporcionar as condições para que seus funcionários possam exercer o direito/dever do voto.
+        - O 1º turno das eleições será em 02/10/2022, em um domingo. 
+
+        - Caso tenha um 2º turno, está previsto para ser em 30/10/2022, também em um domingo.
+
+        - Vale lembrar que o dia da eleição é considerado feriado, porém os estabelecimentos que possuem autorização para funcionamento em feriados poderão funcionar, devendo proporcionar as condições para que seus funcionários possam exercer o direito/dever do voto.
+  utter_request_calendario_eleicoes:
+    - text: |
+        Gostaria de mais detalhes sobre toda a programação e datas importantes das eleições? Segue o link para o site 👍.
+        - https://www.tse.jus.br/eleicoes/calendario-eleitoral/calendario-eleitoral
+  utter_request_funcionamento_eleicoes_p1:
+    - text: |
+        Está com dúvida de como funcionam as eleições? Chega mais que vou te explicar ✌️.
+
+        - A cada quatro anos acontecem eleições, sempre no primeiro domingo de outubro dos anos em que serão realizadas, no horário das 8 horas até as 17 horas.
+
+        - No Brasil utiliza-se de urna eletrônica, sendo o voto feito ao digitar os números dos candidatos ou do partido na urna.
+
+        - Antes das eleições, durante um período determinado por lei, os candidatos fazem suas campanhas. É nesse momento que eles informam o que pretendem fazer se forem eleitos.
+
+  utter_request_funcionamento_eleicoes_p2:
+    - text: |
+        - Em nosso país o voto é secreto, ou seja, ninguém sabe em quem você votou 👀. Isso impede que os eleitores se sintam obrigados a votar em alguém ou trocar o voto por dinheiro ou outros benefícios. 
+
+        - Também é possível votar em branco ou simplesmente anular o voto para quem não gostar dos candidatos. Vale lembrar que é possível votar apenas no partido. 
+
+        - O voto é obrigatório para quem tem entre 18 e 70 anos e sabe ler e escrever. Analfabetos e pessoas com mais de 70 não precisam votar. Quem tem entre 16 e 18 anos pode votar se quiser, mas não é obrigado.
+  utter_request_local_votacao:
+    - text: |
+        Está afim de consultar seu local de votação? Isso pode ser feito por meio do nome do eleitor ou do número do título eleitoral. Aqui está o link para o site: 
+        - https://www.tse.jus.br/eleitor/titulo-e-local-de-votacao/consulta-por-nome
   utter_out_of_scope:
     - text: Desculpa, não compreendi sua mensagem... =(
 actions:
