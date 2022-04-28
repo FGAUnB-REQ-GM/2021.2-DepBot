@@ -117,8 +117,6 @@ Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolv
 
 Para a abordagem de Engenharia de Requisitos também utilizamos como base o Cascata. O modelo possui todas as atividades presentes na engenharia de requisitos, seguindo uma linearidade quanto a ordem de execução das etapas. 
 
-<span style="color:red">SERÁ MESMO QUE VCS ESTÃO USANDO UMA ABORDAGEM CASCATA?</span>
-
 Segue imagem com os processos abaixo:
 
 <p align="center">
