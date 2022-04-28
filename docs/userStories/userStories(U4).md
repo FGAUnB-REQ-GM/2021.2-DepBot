@@ -18,5 +18,5 @@
 ## Critérios de Aceitação
 
 <p align="center">
-  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/criteriosAceitacao_V3.jpg?raw=true">
+  <img src="https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/blob/main/docs/assets/criteriosAceitacao_V5.jpg?raw=true">
 </p>
