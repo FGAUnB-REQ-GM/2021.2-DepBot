@@ -89,6 +89,23 @@ nlu:
       - Câmara dos Deputados
       - Câmara
       - O que posso saber sobre a Câmara dos Deputados
+  - intent: historia_camara
+    examples: |
+      - História da Câmara dos Deputados
+      - Quero saber da história da câmara dos deputados
+      - História Câmara dos Deputados
+      - Qual a história da Câmara dos Deputados ?
+  - intent: funcionamento_camara
+    examples: |
+      - Funcionamento Câmara dos Deputados
+      - Como funciona a Câmara dos Deputados ?
+      - Quero saber como a Câmara dos Deputados funciona
+  - intent: contato_camara
+    examples: |
+      - Como fazer contato com a Câmara dos Deputados ?
+      - Contato Câmara dos Deputados
+      - Quero fazer contato com a Câmara dos Deputados
+
   - intent: request_informacoes_eleicoes
     examples: |
       - Quero saber sobre as eleições

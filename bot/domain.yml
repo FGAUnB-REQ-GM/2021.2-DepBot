@@ -18,6 +18,11 @@ intents:
   - funcionamento_eleições
   - local_votacao
   - out_of_scope
+  - historia_camara
+  - funcionamento_camara
+  - contato_camara
+  - request_informacoes_eleicoes
+
 slots:
   name:
     type: text

@@ -98,9 +98,22 @@ stories:
     steps:
       - intent: request_informacoes_camara
       - action: utter_request_informacoes_camara
+
+  - story: mostra historia câmara dos deputados
+    steps:
+      - intent: historia_camara
       - action: utter_historia_camara
+
+  - story: mostra funcionamento Câmara dos Deputados
+    steps:
+      - intent: funcionamento_camara
       - action: utter_como_funciona_camara
+
+  - story: mostra forma de contato câmara
+    steps:
+      - intent: contato_camara
       - action: utter_como_fazer_contato
+
 
   - story: mostra listagem comandos Eleições
     steps:
