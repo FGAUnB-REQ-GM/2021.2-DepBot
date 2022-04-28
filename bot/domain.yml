@@ -1,25 +1,26 @@
-version: '2.0'
+version: "2.0"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
-- deny
-- request_names
-- goodbye
-- affirm
-- mood_great
-- mood_unhappy
-- bot_challenge
-- request_partido_deputado
-- request_dia_eleicao
-- request_partido_politico
-- request_lista_partidos
-- request_membros_partidos
-- resumo_deputado
-- resumo_partido
-- ask_lista_deputados
-
+  - greet
+  - request_names
+  - request_partido_deputado
+  - request_partido_politico
+  - request_lista_partidos
+  - request_membros_partidos
+  - resumo_deputado
+  - resumo_partido
+  - ask_lista_deputados
+  - request_informacoes_camara
+  - historia_camara
+  - funcionamento_camara
+  - contato_camara
+  - request_informacoes_eleicoes
+  - dia_eleicoes
+  - funcionamento_eleicoes
+  - local_votacao
+  - out_of_scope
 slots:
   name:
     type: text
@@ -36,69 +37,115 @@ slots:
 
 responses:
   utter_greet:
-  - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. =)
-  utter_cheer_up:
-  - text: 'Here is someth2ing to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+    - text: Olá, sou o DepBot, estou aqui para te auxiliar em alguns tópicos políticos. =)
   utter_ask_name:
-  - text: Para eu conseguir os dados, me informe o primeiro  nome do Deputado que deseja consultar.
+    - text: Para eu conseguir os dados, me informe o primeiro  nome do Deputado que deseja consultar.
   utter_ask_sobrenome:
-  - text: Ótimo, agora me informe o sobrenome 
+    - text: Ótimo, agora me informe o sobrenome
   utter_submit:
-  - text: Entendi, estou preparando os dados...
+    - text: Entendi, estou preparando os dados...
   utter_slots_values:
-  - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
+    - text: Encontrei dados sobre {name} {sobrenome}! O que gostaria de ver sobre ele(a) ?
   utter_slots_values_partido_politico:
-  - text: Encontrei dados sobre o partido! O que gostaria de ver sobre ele(a) ?
-  utter_request_dia_eleicao:
-  - text: |
-      Estou muito contente com sua curiosidade sobre as eleições, já que é um momento muito importante para todos definir do que será daqui pra frente 🥳 
-      As eleições para presidente da República, governadores, senadores e deputados federais, estaduais e distritais está prevista para ocorrer no dia 02 de Outubro.
-      Anote aí viu !!!
-      Mas sempre que tiver alguma dúvida relacionada às eleições podem procurar a mim 😃
+    - text: Encontrei dados sobre o partido! O que gostaria de ver sobre ele(a) ?
   utter_request_partido_politico:
-  - text: |
-      Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro. Assim que digitado irei realizar a pesquisa.
+    - text: |
+        Para consultar informações sobre um partido, vou precisar que digite a sigla de um primeiro. Assim que digitado irei realizar a pesquisa.
   utter_mostra_func:
-  - text : |
-      Caso não saiba o que eu posso fazer por agora, tente digitar "Deputado" para buscar informações sobre um deputado específico. Ou então pode digitar "Partido´político" para que eu busque dados sobre um partido em específico. Posso também te informar informações sobre as eleições, como por exemplo o dia que irá ocorrer, basta digitar "Eleições".
+    - text: |
+        Caso não saiba o que eu posso fazer por agora, essas são minhas funções: 
+        - Digite "Deputado" para buscar informações sobre um deputado específico.
+        - Consigo também informar uma lista de deputados do partido desejado através do comando "Listar Deputados". 
+        - Ou então "Partido´político" para que eu busque dados sobre um partido em específico, lembre-se de usar a sigla do partido.
+        - Caso tenha alguma dúvida sobre quais são as siglas dos partidos use o comando "Listar partidos".
+        - Além disso, posso te informar sobre as eleições, basta digitar "Eleições".
+        - E por útimo consigo te auxiliar com informações sobre a Câmara dos Deputados pelo comando "Câmara dos deputados".
   utter_ask_lista_deputados:
-  - text: Para fornecer a listagem, por favor digite a sigla de um partido para que eu possa realizar uma filtragem e mostrar os dados.
+    - text: Para fornecer a listagem, por favor digite a sigla de um partido para que eu possa realizar uma filtragem e mostrar os dados.
+  utter_request_informacoes_camara:
+    - text: |
+        Sobre a Câmara dos Deputados, o que eu consigo te fornecer de informações está bem abaixo =)...
+        - História da Câmara dos Deputados
+        - Como funciona a Câmara dos Deputados
+        - Como realizar contato com a Câmara dos Deputados
+  utter_historia_camara:
+    - text: |
+        Um pouco de história...
+        A Câmara foi criada pela Constituição de 1824 e a sessão de abertura da primeira legislatura da Assembleia Geral Legislativa (reunião conjunta da Câmara dos Deputados e do Senado) ocorreu em 6 de maio de 1826.
+        Clicando no link abaixo você terá uma informação mais detalhada sobre a história da Câmara dos Deputados.
+        https://www2.camara.leg.br/a-camara/conheca/historia
+  utter_como_funciona_camara:
+    - text: |
+        E o que faz essa tal de Câmara dos Deputados ???
+        O Poder Legislativo cumpre papel imprescindível para o País, pois desempenha três funções primordiais para a consolidação da democracia, representar o povo brasileiro, legislar sobre os assuntos de interesse nacional e fiscalizar a aplicação dos recursos públicos.
+        Nesse contexto, a Câmara dos Deputados, como representante do povo brasileiro, discute e vota propostas referentes às áreas econômicas e sociais, como educação, saúde, transporte, habitação, entre outras, e também fiscaliza o emprego, pelos Poderes da União, dos recursos arrecadados da população com o pagamento de tributos.
+        Segue o link com mais conteúdo sobre o assunto https://www2.camara.leg.br/a-camara/conheca/o-papel-do-poder-legislativo
+  utter_como_fazer_contato:
+    - text: |
+        A Câmara dos Deputados recebe, dá tratamento e responde ao cidadão solicitações de informação, denúncias, elogios, sugestões administrativas e legislativas, manifestações sobre proposições em tramitação e reclamações. 
+        Para entrar em contato é possivel das seguintes maneiras...
 
+        - Via telefonema temos +55 (61) 3216-0000 ou então no Disque Câmara 08000 619 619
+        - Registro de mensagens no "Fale Conosco" através do link https://camara.custhelp.com/app/utils/login_form/redirect/home/session/L3RpbWUvMTY1MTEwNTI5Ni9zaWQvZlVxN3U1bGFhSTdlcnNyRG4lN0Vkd0ZNVXNtejhwbTc0UlJEYVJSQjlhN0ROMFhXZU4yajlQNERRVUlTTnN4TkNRcTY4UklyWUFyZWgzMDlXcERjVXgwdEtudklHdzJ6WWJHNVZyOGxRU0dVQTZaemRKN0tZbWFweFElMjElMjE=
+        - Também possuem um email para contato que é dadosabertos.ditec@camara.leg.br
+
+        Horário de atendimento das 8h às 20h, de segunda a sexta-feira.
+  utter_request_informacoes_eleicoes:
+    - text: |
+        Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo 😁...
+        - Dia e calendário das eleições
+        - Funcionamento das eleições
+        - Local de votação
+  utter_request_dia_eleicoes:
+    - text: |
+        - O 1º turno das eleições será em 02/10/2022, em um domingo. 
+        - Caso tenha um 2º turno, está previsto para ser em 30/10/2022, também em um domingo.
+        - Vale lembrar que o dia da eleição é considerado feriado, porém os estabelecimentos que possuem autorização para funcionamento em feriados poderão funcionar, devendo proporcionar as condições para que seus funcionários possam exercer o direito/dever do voto.
+        Gostaria de mais detalhes sobre toda a programação e datas importantes das eleições? Segue o link para o site 👍.
+         https://www.tse.jus.br/eleicoes/calendario-eleitoral/calendario-eleitoral
+  utter_request_funcionamento_eleicoes:
+    - text: |
+        Está com dúvida de como funcionam as eleições? Chega mais que vou te explicar ✌️.
+        - A cada quatro anos acontecem eleições, sempre no primeiro domingo de outubro dos anos em que serão realizadas, no horário das 8 horas até as 17 horas.
+        - No Brasil utiliza-se de urna eletrônica, sendo o voto feito ao digitar os números dos candidatos ou do partido na urna.
+        - Antes das eleições, durante um período determinado por lei, os candidatos fazem suas campanhas. É nesse momento que eles informam o que pretendem fazer se forem eleitos.
+        - Em nosso país o voto é secreto, ou seja, ninguém sabe em quem você votou 👀. Isso impede que os eleitores se sintam obrigados a votar em alguém ou trocar o voto por dinheiro ou outros benefícios.
+        - Também é possível votar em branco ou simplesmente anular o voto para quem não gostar dos candidatos. Vale lembrar que é possível votar apenas no partido.
+        - O voto é obrigatório para quem tem entre 18 e 70 anos e sabe ler e escrever. Analfabetos e pessoas com mais de 70 não precisam votar. Quem tem entre 16 e 18 anos pode votar se quiser, mas não é obrigado.
+        - Na hora de decidir quem venceu, vale a regra da maioria para prefeitos, governadores e presidentes: o candidato precisa ter mais da metade dos votos válidos (o que exclui nulos e brancos) para vencer. Ou seja, 50% mais um voto. Em municípios com menos de 200 mil habitantes, isso não é necessário. Basta que o candidato seja o mais votado, mesmo que não supere os 50% dos votos.
+        - Se houver um empate com número exato de votos o candidato mais velho é quem vence. Caso nenhuma dessas situações aconteça, se realizar um segundo turno com os dois candidatos mais votados.
+        - Geralmente, no segundo turno, os candidatos derrotados costumam escolher um dos dois políticos que se enfrentarão novamente para apoiá-lo, e tentam convencer seus eleitores a votar nesta pessoa.
+        - Para vereadores e deputados não há segundo turno. Vale a regra proporcional: o partido que ganhar mais votos tem direito a eleger mais representantes. Os prefeitos e vereadores eleitos ficam no poder durante quatro anos e podem ser reeleitos duas vezes.
+  utter_request_local_votacao:
+    - text: |
+        Está afim de consultar seu local de votação? Isso pode ser feito por meio do nome do eleitor ou do número do título eleitoral. Aqui está o link para o site: 
+        - https://www.tse.jus.br/eleitor/titulo-e-local-de-votacao/consulta-por-nome
+  utter_out_of_scope:
+    - text: Desculpa, não compreendi sua mensagem... =(
 actions:
-- utter_greet
-- utter_slots_values
-- utter_slots_values_partido_politico
-- utter_submit
-- action_hello_world2
-- action_setIdDeputado
-- action_mostraDados
-- action_mostraSituacao
-- action_mostraListaPartidos
-- action_mostraMembrosPartido
-- action_mostra_resumo
-- action_mostra_resumo_partido
-- action_MostraListaDeputadosPorPartido
+  - utter_greet
+  - utter_slots_values
+  - utter_slots_values_partido_politico
+  - utter_submit
+  - action_hello_world2
+  - action_setIdDeputado
+  - action_mostraDados
+  - action_mostraSituacao
+  - action_mostraListaPartidos
+  - action_mostraMembrosPartido
+  - action_mostra_resumo
+  - action_mostra_resumo_partido
+  - action_MostraListaDeputadosPorPartido
 
 forms:
   name_form:
     name:
-    - type: from_text
+      - type: from_text
     sobrenome:
-    - type: from_text
+      - type: from_text
   partido_form:
     partidoPolitico:
-    - type: from_text
+      - type: from_text
   partido_form2:
     partidoPolitico:
-    - type: from_text
-
-
+      - type: from_text
