@@ -66,6 +66,20 @@ responses:
         A Câmara foi criada pela Constituição de 1824 e a sessão de abertura da primeira legislatura da Assembleia Geral Legislativa (reunião conjunta da Câmara dos Deputados e do Senado) ocorreu em 6 de maio de 1826.
         Clicando no link abaixo você terá uma informação mais detalhada sobre a história da Câmara dos Deputados.
         https://www2.camara.leg.br/a-camara/conheca/historia
+  utter_como_funciona_camara:
+    - text: |
+        E o que faz essa tal de Câmara dos Deputados ???
+        A Câmara, em conjunto com o Senado Federal, tem como atribuições básicas a elaboração de leis federais e a fiscalização do Poder Executivo. Essas atribuições encontram-se especificadas em detalhes nos arts. 48, 49 e 51 da Constituição Federal de 1988
+  utter_como_fazer_contato:
+    - text: |
+        A Câmara dos Deputados recebe, dá tratamento e responde ao cidadão solicitações de informação, denúncias, elogios, sugestões administrativas e legislativas, manifestações sobre proposições em tramitação e reclamações. 
+        Para entrar em contato é possivel das seguintes maneiras...
+
+        - Via telefonema temos +55 (61) 3216-0000 ou então no Disque Câmara 08000 619 619
+        - Registro de mensagens no "Fale Conosco" através do link https://camara.custhelp.com/app/utils/login_form/redirect/home/session/L3RpbWUvMTY1MTEwNTI5Ni9zaWQvZlVxN3U1bGFhSTdlcnNyRG4lN0Vkd0ZNVXNtejhwbTc0UlJEYVJSQjlhN0ROMFhXZU4yajlQNERRVUlTTnN4TkNRcTY4UklyWUFyZWgzMDlXcERjVXgwdEtudklHdzJ6WWJHNVZyOGxRU0dVQTZaemRKN0tZbWFweFElMjElMjE=
+        - Também possuem um email para contato que é dadosabertos.ditec@camara.leg.br
+
+        Horário de atendimento das 8h às 20h, de segunda a sexta-feira.
   utter_request_informacoes_eleicoes:
     - text: |
         Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo =)...
