@@ -14,7 +14,7 @@
 <p> Kanban : https://github.com/FGAUnB-REQ-GM/2021.2-DepBot/projects/1</p>
 <p> GitPages : https://fgaunb-req-gm.github.io/2021.2-DepBot/</p>
 <p> Miro : https://miro.com/app/board/uXjVOFKLwOs=/?invite_link_id=792397665435</p>
-
+<p> Para acessar o depbot pesquise no aplicativo de mensagens: @dddep_bot </p>
 ## Resultados:
 
 <p> Vídeo Unidade 1: https://www.youtube.com/watch?v=0hVLfgD8wBI</p>
