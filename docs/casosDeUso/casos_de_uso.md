@@ -126,7 +126,6 @@ Não se aplica.
 
 <p>&emsp;&emsp;7.1 RN01 - Validação da Sigla
 <p>&emsp;&emsp;No passo 4.3 do fluxo básico, para que seja considerado válido a sigla, a sigla deve estar no banco de dados.</p>
-
 <h3>8. Pós-condições </h3>
 <p>Não se aplica</p>
 <h3>9. Pontos de Extensão</h3>
@@ -158,21 +157,35 @@ Não se aplica.
 
 <h3>4. Fluxo Básico (FB)</h3>
 
+
 &emsp;&emsp;4.1 Este caso de uso é iniciado quando o usuário solicitar informações sobre a Câmara dos Deputados
 
-&emsp;&emsp;4.2 O sistema recebe a solicitação e exibe informações gerais sobre a Câmara
+&emsp;&emsp;4.2 O sistema recebe a solicitação e exibe tópicos relacionados para o usuário consultar (RN01).
 
-&emsp;&emsp;4.3 O caso de uso é encerrado.
+&emsp;&emsp;4.3 O usuário escolhe um tópico.
+
+&emsp;&emsp;4.4 O sistema exibe informações sobre aquele tópico.
+
+&emsp;&emsp;4.5 O caso de uso é encerrado(RN02)(FE01).
 
 <h3>5. Fluxo Alternativo (FA)</h3>
 
 Não se aplica.
 
 <h3>6 Fluxo de Exceção (FE)</h3> 
-Não se aplica.
+<p>&emsp;&emsp;6.1 FE01 - Tópico Alternativo</p>
+<p>&emsp;&emsp;No passo 4.5 do fluxo básico, caso o usuário queria consultar outro tópico ele poderá consultar ao digitar o tópico, então o sistema exibe informações sobre o tópico. E, o caso de uso retorna ao passo 4.5 do FB.</p>
+
 <h3>7 Regra de Negócio (RN) </h3>
 
-Não se aplica.
+<p>&emsp;7.1 RN01 - Lista de Tópicos Relacionados</p>
+&emsp;No passo 4.2 do fluxo básico, o sistema exibe a seguinte lista de tópicos relaciodos à Câmada dos Deputados:<ul>
+<li> História da Câmara dos Deputados</li>
+<li> Como funciona a Câmara dos Deputados</li>
+<li>Como realizar contato com a Câmara dos Deputados</li></ul>
+
+<p>&emsp;7.2 RN02 - Tópicos Alternativos</p>
+&emsp;No passo 4.5 do fluxo básico, o usuário tem a chance de consultar outro tópico.</p>
 
 <h3>8. Pós-condições </h3>
 Não se aplica.
@@ -183,10 +196,10 @@ Não se aplica.
 
 | DEPBOT                                                          |                  |
 | --------------------------------------------------------------- | ---------------- |
-| Especificação de Caso de Uso: Consulta de Informações da Câmara | Data: 26/04/2022 |
+| Especificação de Caso de Uso: Consulta de Informações das Eleições | Data: 26/04/2022 |
 
 <h1 align="center">Depbot </h1>
-<h2 align="center">Caso de Uso: Consulta de Informações da Câmara</h2>
+<h2 align="center">Caso de Uso: Consulta de Informações das Eleições</h2>
 <h3>1. Breve Descrição</h3>
 <p>&emsp;&emsp;O presente caso de uso descreve o fluxo de atividades englobado pela consulta de informações das eleições, desejado pelo usuário. Um dos serviços do Depbot é a consulta de informações gerais sobre as Eleições, na qual o usuário realiza uma pergunta e o sistema disponibiliza a resposta, caso a possua.</p>
 <h3>2. Atores</h3>
@@ -207,19 +220,32 @@ Não se aplica.
 
 &emsp;&emsp;4.1 Este caso de uso é iniciado quando o usuário solicitar informações sobre as Eleições
 
-&emsp;&emsp;4.2 O sistema recebe a solicitação e exibe informações gerais sobre as Eleições
+&emsp;&emsp;4.2 O sistema recebe a solicitação e exibe tópicos relacionados para o usuário consultar (RN01).
 
-&emsp;&emsp;4.3 O caso de uso é encerrado.
+&emsp;&emsp;4.3 O usuário escolhe um tópico.
+
+&emsp;&emsp;4.4 O sistema exibe informações sobre aquele tópico.
+
+&emsp;&emsp;4.5 O caso de uso é encerrado(RN02)(FE01).
 
 <h3>5. Fluxo Alternativo (FA)</h3>
 
 Não se aplica.
 
 <h3>6 Fluxo de Exceção (FE)</h3> 
-Não se aplica.
+<p>&emsp;&emsp;6.1 FE01 - Escolha de Outro Tópico</p>
+<p>&emsp;&emsp;No passo 4.5 do fluxo básico, caso o usuário queria consultar outro tópico ele poderá consultar ao digitar o tópico, então o sistema exibe informações sobre o tópico. E, o caso de uso retorna ao passo 4.5 do FB.</p>
+
 <h3>7 Regra de Negócio (RN) </h3>
 
-Não se aplica.
+<p>&emsp;7.1 RN01 - Lista de Tópicos Relacionados</p>
+&emsp;No passo 4.2 do fluxo básico, o sistema exibe a seguinte lista de tópicos relaciodos com as eleições:<ul>
+<li> Dia e calendário das eleições</li>
+<li> Funcionamento das eleições</li>
+<li> Local de votação</li></ul>
+
+<p>&emsp;7.2 RN02 - Tópicos Alternativos</p>
+&emsp;No passo 4.5 do fluxo básico, o usuário tem a chance de consultar outro tópico.</p>
 
 <h3>8. Pós-condições </h3>
 Não se aplica.
