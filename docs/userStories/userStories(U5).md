@@ -9,7 +9,7 @@
 | 17/03/2022 | 0.3    | Correção do documento de acordo com o feedback da apresentação | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 | 17/03/2022 | 0.3    | Correção do documento de acordo com o feedback da apresentação | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
 | 06/04/2022 | 0.4    | Atualização nos critérios de aceitação                         | Victor Cabral                                                         |
-| 27/04/2022 | 0.4    | Atualização nos critérios de aceitação de acordo com o produto | Victor Cabral                                                         |
+| 27/04/2022 | 0.5    | Atualização nos critérios de aceitação de acordo com o produto | Victor Cabral                                                         |
 
 ## Imagem da Tabela de User Stories:
 
