@@ -7,4 +7,4 @@
 
 ## Link para o vídeo presente na plataforma YouTube:
 
-https://www.youtube.com/watch?v=IW2gBED70MQ
+https://www.youtube.com/watch?v=rxfXKnXIbsA
