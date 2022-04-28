@@ -246,7 +246,7 @@ Na Unidade 4, foi iniciada a implementação do projeto, portanto, pudemos apren
 
 Além disso, aprendemos a usar as histórias de usuário para elaborar o User Story Map do projeto, que nos permite visualizar os requisitos em diferentes níveis abstrações. Também continuamos a desenvolver o uso do quadro Kanbam, categorizando as issues devidamente.
 
-### 5.4 Unidade 5
+### 5.5 Unidade 5
 
 Na Unidade 5, aprendemos sobre casos de usos e a linguagem de UML usada para fazer diagrams dos casos de uso, e fizemos o própio diagrama dos casos de uso do Depbot além das especificações dos casos de uso. Também fizemos várias correções no código do bot além de implementar todos os outros itens do MVP não implementado na primeira release, como informações das eleições e da Câmara dos Deputados, além da listagem de deputado.
 
