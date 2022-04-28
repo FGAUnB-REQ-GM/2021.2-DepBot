@@ -5,3 +5,5 @@
   - [User Stories MVP e Critérios de Aceitação](userStories/userStories(U4).md)
   - [Behavior Driven Development (BDD)](userStories/BDD(U3).md)
   - [User Story Mapping (USM)](userStories/userStoryMapping(U4).md)
+  - [Use Cases](casosDeUso/casos_de_uso.md) 
+  - [Use Case Diagram](casosDeUso/diagrama_casos_de_uso.md)   
