@@ -105,20 +105,20 @@ nlu:
       - Como fazer contato com a Câmara dos Deputados ?
       - Contato Câmara dos Deputados
       - Quero fazer contato com a Câmara dos Deputados
-
+      - Contato
   - intent: request_informacoes_eleicoes
     examples: |
       - Quero saber sobre as eleições
       - Informações sobre as Eleições
       - Eleições
       - O que posso saber sobre as eleições ?
-  - intent: dia_eleições
+  - intent: dia_eleicoes
     examples: |
       - Dia das eleições
       - Data das eleições
       - Quero saber do Dia das eleições
       - Quero saber do Data das eleições
-  - intent: funcionamento_eleições
+  - intent: funcionamento_eleicoes
     examples: |
       - Funcionamento das eleições
       - Como funciona as eleições

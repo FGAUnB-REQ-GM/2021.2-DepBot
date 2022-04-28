@@ -98,7 +98,7 @@ stories:
     steps:
       - intent: request_informacoes_camara
       - action: utter_request_informacoes_camara
-
+ 
   - story: mostra historia câmara dos deputados
     steps:
       - intent: historia_camara
@@ -114,26 +114,19 @@ stories:
       - intent: contato_camara
       - action: utter_como_fazer_contato
 
-
   - story: mostra listagem comandos Eleições
     steps:
       - intent: request_informacoes_eleicoes
       - action: utter_request_informacoes_eleicoes
+  - story: mostra dia das eleições
+    steps:
+      - intent: dia_eleicoes
       - action: utter_request_dia_eleicoes
+  - story: mostra funcionamento eleições
+    steps:
+      - intent: funcionamento_eleicoes
       - action: utter_request_funcionamento_eleicoes
-      - action: utter_request_local_votacao
-
-  - story: mostra dia das Eleições
+  - story: mostra local votação
     steps:
-      - intent: request_dia_eleicoes
-      - action: utter_request_dia_eleicoes
-  
-    - story: mostra funcionamento das Eleições
-    steps:
-      - intent: request_funcionamento_eleicoes
-      - action: utter_request_funcionamento_eleicoes
-    
-    - story: mostra local da votacao
-    steps:
-      - intent: request_local_votacao
+      - intent: local_votacao
       - action: utter_request_local_votacao
