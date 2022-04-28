@@ -27,6 +27,7 @@
 |17/03/2022|0.21|Correção no tópico 4.2 conforme feedback|Pedro Vieira|
 |06/04/2022|0.22|Atualização nas Lições Aprendidas|Lucas Braun|
 |18/04/2022|0.23|Alteração no documento conforme feedback | Lucas Braun, Pedro Lucas, Pedro Vieira, Victor Cabral, Vinicius Roriz |
+|18/04/2022|0.24|Alteração para atualizar o documento conforme alterações na Unidade 5 | Pedro Lucas |
 
 
 ## 1. Visão Geral
@@ -93,6 +94,8 @@ O MVP (Minimum Viable Product), consiste em uma mínima versão do produto com f
 |**RF1**| Pesquisar deputados federais que estão em exercício e ex-deputados federais |
 |**RF2**| Consultar informações sobre o deputado |
 |**RF3**| Consultar informações sobre os partidos da Câmara dos Deputados |
+|**RF7**| Gerenciamento de Informações Gerais | Consultar informações sobre as eleições |
+|**RF8**| Gerenciamento de Informações Gerais | Consultar informações sobre a Câmara dos Deputados |
 |**RF10**| Consultar as possíveis funcionalidades do bot |
 |**RF11**| Demonstrar o não entendimento da solicitação em caso de falha na compreensão |
 |**RF12** | Responder às saudações digitadas |
@@ -113,8 +116,6 @@ Após cuidadosa consideração, a abordagem escolhida pelo time para o desenvolv
 ## 3. Abordagem de Engenharia de Requisitos
 
 Para a abordagem de Engenharia de Requisitos também utilizamos como base o Cascata. O modelo possui todas as atividades presentes na engenharia de requisitos, seguindo uma linearidade quanto a ordem de execução das etapas. 
-
-<span style="color:red">SERÁ MESMO QUE VCS ESTÃO USANDO UMA ABORDAGEM CASCATA?</span>
 
 Segue imagem com os processos abaixo:
 
@@ -242,6 +243,10 @@ Tivemos contato também com Behavior Driven Development (BDD), no qual nos ajudo
 Na Unidade 4, foi iniciada a implementação do projeto, portanto, pudemos aprender mais sobre como utilizar o framework Rasa e suas estruturas.
 
 Além disso, aprendemos a usar as histórias de usuário para elaborar o User Story Map do projeto, que nos permite visualizar os requisitos em diferentes níveis abstrações. Também continuamos a desenvolver o uso do quadro Kanbam, categorizando as issues devidamente.
+
+### 5.5 Unidade 5
+
+Na Unidade 5, aprendemos sobre casos de usos e a linguagem de UML usada para fazer diagrams dos casos de uso, e fizemos o própio diagrama dos casos de uso do Depbot além das especificações dos casos de uso. Também fizemos várias correções no código do bot além de implementar todos os outros itens do MVP não implementado na primeira release, como informações das eleições e da Câmara dos Deputados, além da listagem de deputado.
 
 ## 6. Referências Bibliográficas
 
