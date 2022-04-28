@@ -1,6 +1,6 @@
-<!-- ![logo](assets/ ':size=10%') -->
+![logo](assets/depbot.png)
 
 # DepBot
 
 <!-- bg -->
-<!-- ![](assets/) -->
+<!-- ![](assets/bg.png) -->
