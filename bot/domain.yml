@@ -14,6 +14,9 @@ intents:
   - ask_lista_deputados
   - request_informacoes_camara
   - request_informacoes_eleicoes
+  - dia_eleições
+  - funcionamento_eleições
+  - local_votacao
   - out_of_scope
 slots:
   name:
@@ -82,6 +85,10 @@ responses:
   utter_request_informacoes_eleicoes:
     - text: |
         Sobre as Eleições, o que eu consigo te fornecer de informações está bem abaixo 😁...
+
+        - Dia e calendário das eleições
+        - Funcionamento das eleições
+        - Local de votação
   utter_request_dia_eleicoes:
     - text: |
         - O 1º turno das eleições será em 02/10/2022, em um domingo. 
@@ -89,11 +96,10 @@ responses:
         - Caso tenha um 2º turno, está previsto para ser em 30/10/2022, também em um domingo.
 
         - Vale lembrar que o dia da eleição é considerado feriado, porém os estabelecimentos que possuem autorização para funcionamento em feriados poderão funcionar, devendo proporcionar as condições para que seus funcionários possam exercer o direito/dever do voto.
-  utter_request_calendario_eleicoes:
-    - text: |
+
         Gostaria de mais detalhes sobre toda a programação e datas importantes das eleições? Segue o link para o site 👍.
         - https://www.tse.jus.br/eleicoes/calendario-eleitoral/calendario-eleitoral
-  utter_request_funcionamento_eleicoes_p1:
+  utter_request_funcionamento_eleicoes:
     - text: |
         Está com dúvida de como funcionam as eleições? Chega mais que vou te explicar ✌️.
 
@@ -103,13 +109,19 @@ responses:
 
         - Antes das eleições, durante um período determinado por lei, os candidatos fazem suas campanhas. É nesse momento que eles informam o que pretendem fazer se forem eleitos.
 
-  utter_request_funcionamento_eleicoes_p2:
-    - text: |
         - Em nosso país o voto é secreto, ou seja, ninguém sabe em quem você votou 👀. Isso impede que os eleitores se sintam obrigados a votar em alguém ou trocar o voto por dinheiro ou outros benefícios. 
 
         - Também é possível votar em branco ou simplesmente anular o voto para quem não gostar dos candidatos. Vale lembrar que é possível votar apenas no partido. 
 
         - O voto é obrigatório para quem tem entre 18 e 70 anos e sabe ler e escrever. Analfabetos e pessoas com mais de 70 não precisam votar. Quem tem entre 16 e 18 anos pode votar se quiser, mas não é obrigado.
+
+        - Na hora de decidir quem venceu, vale a regra da maioria para prefeitos, governadores e presidentes: o candidato precisa ter mais da metade dos votos válidos (o que exclui nulos e brancos) para vencer. Ou seja, 50% mais um voto. Em municípios com menos de 200 mil habitantes, isso não é necessário. Basta que o candidato seja o mais votado, mesmo que não supere os 50% dos votos. 
+
+        - Se houver um empate com número exato de votos o candidato mais velho é quem vence. Caso nenhuma dessas situações aconteça, se realizar um segundo turno com os dois candidatos mais votados.
+
+        - Geralmente, no segundo turno, os candidatos derrotados costumam escolher um dos dois políticos que se enfrentarão novamente para apoiá-lo, e tentam convencer seus eleitores a votar nesta pessoa.
+
+        - Para vereadores e deputados não há segundo turno. Vale a regra proporcional: o partido que ganhar mais votos tem direito a eleger mais representantes. Os prefeitos e vereadores eleitos ficam no poder durante quatro anos e podem ser reeleitos duas vezes.
   utter_request_local_votacao:
     - text: |
         Está afim de consultar seu local de votação? Isso pode ser feito por meio do nome do eleitor ou do número do título eleitoral. Aqui está o link para o site: 

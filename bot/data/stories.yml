@@ -106,9 +106,21 @@ stories:
     steps:
       - intent: request_informacoes_eleicoes
       - action: utter_request_informacoes_eleicoes
-
       - action: utter_request_dia_eleicoes
-      - action: utter_request_funcionamento_eleicoes_p1
-      - action: utter_request_funcionamento_eleicoes_p2
-      - action: utter_request_calendario_eleicoes
+      - action: utter_request_funcionamento_eleicoes
+      - action: utter_request_local_votacao
+
+  - story: mostra dia das Eleições
+    steps:
+      - intent: request_dia_eleicoes
+      - action: utter_request_dia_eleicoes
+  
+    - story: mostra funcionamento das Eleições
+    steps:
+      - intent: request_funcionamento_eleicoes
+      - action: utter_request_funcionamento_eleicoes
+    
+    - story: mostra local da votacao
+    steps:
+      - intent: request_local_votacao
       - action: utter_request_local_votacao
