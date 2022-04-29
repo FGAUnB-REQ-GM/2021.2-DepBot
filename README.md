@@ -5,7 +5,7 @@
 
 <p align="justify">
   Repositório referente à disciplina de Requisitos de Software da Universidade de Brasília. Tem como objetivo o desenvolvimento de um bot para telegram chamado DepBot.
-  O DepBot tem como objetivo levar informações referentes a deputados federais, à Câmara dos Deputados e sobre as eleições para o usuário. Com isso esperamos que a população eleitoral adquira mais informações sobre os deputados que queira eleger.
+  O DepBot tem como objetivo levar informações referentes a deputados federais, à Câmara dos Deputados e às eleições para o usuário. Com isso, esperamos que a população eleitoral adquira mais informações sobre os deputados que queira eleger.
 </p>
 
 ## Links Referentes ao projeto:
