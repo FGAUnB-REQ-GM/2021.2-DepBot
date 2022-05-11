@@ -92,7 +92,8 @@ nlu:
   - intent: historia_camara
     examples: |
       - História da Câmara dos Deputados
-      - Quero saber da história da câmara dos deputados
+      - O que é a Câmara dos Deputados
+      - Quero saber sobre o que é a câmara dos deputados
       - História Câmara dos Deputados
       - Qual a história da Câmara dos Deputados ?
   - intent: funcionamento_camara

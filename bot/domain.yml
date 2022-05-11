@@ -65,11 +65,13 @@ responses:
   utter_request_informacoes_camara:
     - text: |
         Sobre a Câmara dos Deputados, o que eu consigo te fornecer de informações está bem abaixo =)...
-        - História da Câmara dos Deputados
+        - O que é a Câmara dos Deputados
         - Como funciona a Câmara dos Deputados
         - Como realizar contato com a Câmara dos Deputados
   utter_historia_camara:
     - text: |
+        A Câmara dos Deputados é um orgão que possui três funções, representar os interesses do povo brasileiro, legislar sobre assuntos de interesse nacional e fiscalizar a aplicação de recursos públicos.
+        A Câmara, em conjunto com o Senado Federal, tem como atribuições básicas a elaboração de leis federais e a fiscalização do Poder Executivo. Essas atribuições encontram-se especificadas em detalhes nos arts. 48, 49 e 51 da Constituição Federal de 1988.
         Um pouco de história...
         A Câmara foi criada pela Constituição de 1824 e a sessão de abertura da primeira legislatura da Assembleia Geral Legislativa (reunião conjunta da Câmara dos Deputados e do Senado) ocorreu em 6 de maio de 1826.
         Clicando no link abaixo você terá uma informação mais detalhada sobre a história da Câmara dos Deputados.
